@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ro"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Istoria clasa a V-a — Orientul Antic</title>
+<meta name="theme-color" content="#1e3f8f"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Istoria 5"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2f8;--sf:#ffffff;--sf2:#f6f8fc;--ink:#18213a;--mut:#5b6478;--line:#dfe5f0;--lap:#1e3f8f;--lap2:#2c56b8;--gold:#c9920e;--goldl:#f3d27a;--ok:#0f8a5f;--okbg:#dcf5ea;--no:#c2410c;--nobg:#fde7dc;
+ color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1324;--sf:#172038;--sf2:#1d2844;--ink:#e8ecf6;--mut:#a3acc2;--line:#2a3658;--lap:#6f8fe0;--lap2:#8aa5ee;--gold:#e8b93a;--goldl:#6b5313;--ok:#4ad19a;--okbg:#123a2c;--no:#ff9a6b;--nobg:#47241a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d1324;--sf:#172038;--sf2:#1d2844;--ink:#e8ecf6;--mut:#a3acc2;--line:#2a3658;--lap:#6f8fe0;--lap2:#8aa5ee;--gold:#e8b93a;--goldl:#6b5313;--ok:#4ad19a;--okbg:#123a2c;--no:#ff9a6b;--nobg:#47241a;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Nunito",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.5}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--sf)}
+#app{max-width:600px;margin:0 auto;min-height:100%;padding-bottom:120px}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+button:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+h1,h2,.serif{font-family:"Cinzel",Georgia,"Times New Roman",serif;letter-spacing:.01em}
+.pad{padding:16px}.center{text-align:center}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;align-items:center;gap:6px;padding:10px 10px;background:var(--sf);border-bottom:1px solid var(--line)}
+.top .ttl{flex:1;font-weight:800;font-size:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.back{font-size:30px;line-height:1;padding:0 12px;color:var(--lap)}
+.ic{font-size:21px;padding:6px 9px;border-radius:12px}
+/* hero: Ishtar gate frieze */
+.hero{background:var(--lap);color:#fff;position:relative;overflow:hidden}
+.frieze{height:34px;background:
+ radial-gradient(circle at 17px 17px,#f3d27a 0 5px,#c9920e 5px 7px,transparent 7.5px) 0 0/34px 34px,
+ linear-gradient(#1a3678,#1a3678);border-bottom:3px solid #c9920e;border-top:3px solid #c9920e}
+.hero .in{padding:20px 18px 22px;display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.hero h1{margin:0;font-size:27px;line-height:1.15}
+.hero .sub{opacity:.92;margin-top:6px;font-size:15px}
+.hero .ic{background:rgba(255,255,255,.16);color:#fff}
+.streak{display:inline-flex;align-items:center;gap:6px;margin-top:10px;background:rgba(0,0,0,.22);padding:4px 12px;border-radius:20px;font-weight:700;font-size:14px}
+.path{display:grid;gap:12px;margin-top:4px}
+.lcard{position:relative;display:block;width:100%;text-align:left;background:var(--sf);border-radius:16px;padding:14px 56px 14px 16px;border:1px solid var(--line);border-left:7px solid var(--c)}
+.lnr{font-size:13px;font-weight:800;color:var(--c)}
+.lt{font-size:18px;font-weight:800;line-height:1.25;margin-top:2px}
+.bar,.prog{height:8px;background:var(--sf2);border-radius:8px;margin-top:10px;overflow:hidden}.bar i,.prog i{display:block;height:100%;background:var(--c,var(--lap));border-radius:8px}
+.pct{position:absolute;top:14px;right:14px;font-size:14px;font-weight:800;color:var(--mut)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:14px}
+.tile{background:var(--sf);border:1px solid var(--line);border-radius:16px;padding:12px;text-align:left}.tile:disabled{opacity:.5}
+.tile .ti{font-size:26px}.tile b{display:block;line-height:1.2}.tile small{display:block;color:var(--mut);font-size:13px;margin-top:3px;line-height:1.3}
+.hint{color:var(--mut);font-size:14.5px;line-height:1.5}
+.lhead{background:var(--c);color:#fff;padding:18px 18px 20px}.lhead .n{font-weight:800;opacity:.9;font-size:14px}.lhead h2{margin:4px 0 0;font-size:22px;line-height:1.25}
+.gh{margin:20px 0 8px;font-size:15px;color:var(--mut);font-weight:800}
+.acts{display:grid;gap:8px}
+.act{display:flex;align-items:center;gap:12px;background:var(--sf);border:1px solid var(--line);border-radius:14px;padding:12px 14px;text-align:left;width:100%}
+.aic{font-size:25px;width:32px;text-align:center}.atx{flex:1}.atx b{display:block}.atx small{display:block;color:var(--mut);font-size:13.5px}.st{color:var(--gold);font-size:16px;letter-spacing:1px;white-space:nowrap}
+.btn{display:inline-block;background:var(--sf);border:2px solid var(--line);border-radius:14px;padding:12px 16px;font-weight:800;margin-top:10px;text-align:center}
+.btn.primary{background:var(--lap);border-color:var(--lap);color:#fff}.btn.good{background:var(--ok);border-color:var(--ok);color:#fff}.btn.danger{color:var(--no);border-color:var(--nobg)}
+.btn:disabled{opacity:.45}.wide{display:block;width:100%}
+.para{display:flex;gap:10px;background:var(--sf);border:1px solid var(--line);border-radius:14px;padding:12px;margin:10px 0}
+.para p{margin:0;line-height:1.65}.pl{flex:none;width:38px;height:38px;border-radius:50%;background:var(--sf2);color:var(--lap);font-size:14px;border:1px solid var(--line)}
+.speaking{outline:3px solid var(--gold);outline-offset:2px}
+.cards{display:grid;gap:10px}
+.fc{position:relative;width:100%;min-height:120px;perspective:900px;text-align:left}
+.fc .in{position:relative;width:100%;min-height:120px;transition:transform .45s;transform-style:preserve-3d}
+.fc.flip .in{transform:rotateY(180deg)}
+.fc .f,.fc .b{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:16px;padding:16px;display:flex;flex-direction:column;justify-content:center;border:1px solid var(--line)}
+.fc .f{background:var(--sf);border-left:7px solid var(--c)}.fc .f b{font-size:20px;font-family:"Cinzel",Georgia,serif}.fc .f small{color:var(--mut);margin-top:6px;font-size:13px}
+.fc .b{background:var(--sf2);transform:rotateY(180deg);font-size:17px;font-weight:600}
+@media (prefers-reduced-motion:reduce){.fc .in{transition:none}}
+.qsub{color:var(--mut);margin:16px 0 8px;font-weight:700}
+.qp{font-size:22px;font-weight:800;margin:8px 0 16px;line-height:1.35}
+.opts{display:grid;gap:10px}.opts.two{grid-template-columns:1fr 1fr}
+.opt{background:var(--sf);border:2px solid var(--line);border-radius:14px;padding:13px 14px;font-size:17px;font-weight:700;text-align:left}
+.opts.two .opt{text-align:center;font-size:19px}
+.opt.good{background:var(--okbg);border-color:var(--ok)}.opt.bad{background:var(--nobg);border-color:var(--no)}
+.tin,#cin,#nm,#otin{width:100%;font-size:19px;padding:13px 14px;border:2px solid var(--line);border-radius:14px;background:var(--sf);color:var(--ink);font-family:inherit}
+.fb{margin-top:14px;padding:14px;border-radius:14px;line-height:1.5}.fb.ok{background:var(--okbg)}.fb.no{background:var(--nobg)}
+.fb small{display:block;color:var(--mut);margin-top:6px}
+.res{font-size:66px;margin-top:20px}.bigst{font-size:36px;color:var(--gold);letter-spacing:4px}
+.ord{display:grid;gap:8px;margin:10px 0}
+.chip{display:flex;align-items:center;gap:10px;width:100%;background:var(--sf);border:2px solid var(--line);border-radius:14px;padding:11px 12px;text-align:left;font-weight:700}
+.chip .num{flex:none;width:28px;height:28px;border-radius:50%;background:var(--lap);color:#fff;display:grid;place-items:center;font-size:14px}
+.chip.used{opacity:.35}.chip.good{border-color:var(--ok);background:var(--okbg)}.chip.bad{border-color:var(--no);background:var(--nobg)}
+.chip small{display:block;color:var(--mut);font-weight:600}
+.slots{min-height:60px;border:2px dashed var(--line);border-radius:14px;padding:8px;display:grid;gap:8px}
+.mic{background:var(--gold);color:#1b1300;border-radius:999px;padding:14px 18px;font-weight:800;font-size:18px}
+.mic.big{display:block;width:100%;margin-top:12px;padding:18px}
+.mic.on{animation:pulse 1.2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(201,146,14,.55)}50%{box-shadow:0 0 0 12px rgba(201,146,14,0)}}
+@media (prefers-reduced-motion:reduce){.mic.on{animation:none}}
+.heard{margin-top:10px;font-style:italic;color:var(--mut);min-height:22px}
+.play{font-size:26px;width:56px;height:56px;border-radius:50%;background:var(--lap);color:#fff;vertical-align:middle;margin-right:8px}
+.note{background:var(--sf2);border:1px solid var(--line);border-radius:14px;padding:12px 14px;color:var(--mut);font-size:15px;line-height:1.5}
+.chat{padding-bottom:150px}
+.msg{max-width:88%;margin:10px 0;padding:11px 14px;border-radius:16px;line-height:1.5}
+.msg.me{margin-left:auto;background:var(--lap);color:#fff;border-bottom-right-radius:5px}
+.msg.ai{background:var(--sf);border:1px solid var(--line);border-bottom-left-radius:5px}
+.msg .pl{width:30px;height:30px;font-size:12px;margin-right:6px;vertical-align:middle}
+.composer{position:fixed;left:0;right:0;bottom:0;background:var(--sf);border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px))}
+.crow{display:flex;gap:8px;max-width:600px;margin:0 auto;align-items:center}
+.crow #cin{flex:1;font-size:17px;padding:11px 12px}
+.crow .mic{padding:11px 14px;font-size:20px}
+.crow .btn{margin:0;padding:11px 15px}
+.seg{display:flex;gap:6px;margin:8px 0}.seg button{flex:1;padding:9px;border-radius:12px;border:2px solid var(--line);background:var(--sf);font-weight:700;font-size:14px}.seg button.on{border-color:var(--lap);color:var(--lap)}
+label{display:block;font-weight:700;margin:14px 0 6px}
+.chk{display:flex;gap:8px;align-items:center;font-weight:600}
+input[type=range]{width:100%}
+.welcome{padding:0 22px 30px;text-align:center}.welcome .big{font-size:64px;margin:26px 0 6px}
+.welcome h1{font-size:28px;margin:0 0 6px}
+.muted{color:var(--mut)}
+</style></head><body><div id="app"></div>
+<script>
+const TOPICS=[
+{id:"t1",nr:"Tema 1",title:"Omul și mediul. Popoarele Orientului Antic",color:"#0e7490",
+explain:[
+"Orientul Antic este numele regiunilor din nord-estul Africii și din Asia unde au apărut primele civilizații. Istoria lui ține din mileniul al IV-lea î.H. până în primele veacuri ale erei noastre, de la Marea Mediterană până la Oceanul Pacific.",
+"Primele civilizații au apărut lângă marile fluvii, de aceea se numesc civilizații fluviale. Mesopotamia, adică „între două râuri”, se afla între Tigru și Eufrat. Egiptul era pe valea Nilului. India Antică, pe fluviile Ind și Gange. China Antică, pe fluviile Huang He, numit Fluviul Galben, și Yangtze, numit Fluviul Albastru.",
+"Fluviile le dădeau oamenilor hrană și apă, erau sursa de irigare și o cale de comerț. Semiluna Fertilă, numită și Cornul Abundenței, era o regiune foarte roditoare în formă de lună: Egiptul, Fenicia, Mesopotamia, Asiria și Sumerul.",
+"Natura era diferită de la o țară la alta. Egiptul era înconjurat de deșert la est și la vest. Mesopotamia avea podiș în nord și câmpie în sud, cu ierni blânde și ploioase și veri calde și uscate. Fenicia era pe malul de est al Mării Mediterane. Persia, pe Podișul Iranului, avea veri foarte călduroase și ierni geroase.",
+"India avea două anotimpuri: iarna rece și uscată și vara toridă, cu ploi torențiale. De aceea avea multe plante și animale. China avea climă de la tropicală în sud la continentală în nord: în vest munți, platouri și deșerturi, iar în est câmpii, delte și dealuri.",
+"Popoarele Orientului Antic erau de patru origini: indo-europeană, semită, hamită și sino-tibetană. Indo-europenii au venit din Asia Centrală. Semiții erau păstori nomazi din deșerturile Asiei de Vest, care s-au așezat în Mesopotamia și pe malul Mediteranei.",
+"În Mesopotamia au trăit sumerienii, pe care manualul îi numește indo-europeni, apoi akadienii, amoriții, asirienii și chaldeenii, care erau semiți. Egiptenii erau de origine semito-hamită. Evreii și fenicienii erau semiți. Perșii, indo-europeni, s-au așezat pe Podișul Iranian. Chinezii erau sino-tibetani.",
+"În India, dravidienii au creat Civilizația Harappa, în Valea Indului, între 3000 și 1600 î.H. Orașele Mohenjo-Daro și Harappa aveau străzi drepte, case din cărămidă arsă cu mai multe niveluri și canalizare. Locuitorii aveau și un sistem de scriere. Civilizația a dispărut în 1500 î.H. și nu se știe de ce. La mijlocul mileniului al II-lea î.H. au venit arienii, păstori nomazi, care au asimilat populația locală.",
+"Ocupațiile principale erau agricultura și creșterea animalelor. Agricultura cu irigație însemna secarea mlaștinilor, diguri, lacuri artificiale și canale. În Egipt Nilul se revărsa în fiecare an și lăsa un mâl negru, roditor. Diodor din Sicilia scria că în Egipt agricultura se face cu muncă puțină: arunci sămânța, vitele o calcă, iar după patru-cinci luni seceri. În China se practica agricultura pe straturi.",
+"Meșteșugurile: egiptenii erau pricepuți la bijuterii, corăbii, metale și papirus. Fenicienii, la vopsirea pânzelor, corăbii și sticlă. Mesopotamienii, la prelucrarea pielii, țesut și pâine. Chinezii, la mătase, fier și porțelan. Indienii, la bijuterii, țesut și zahăr din trestie.",
+"Comerțul se făcea pe uscat, cu caravane de catâri, cămile și elefanți, și pe apă, cu luntri, galere și corăbii. Cele mai vestite drumuri au fost Drumul Regilor, între Egipt și Mesopotamia, și Drumul Mătăsii, între Marea Mediterană și estul Asiei. China vindea mătase, porțelan și ceai, India vindea piper, perle și pietre prețioase, iar Egiptul vindea grâne, aur și papirus."
+],
+cards:["Civilizație|Nivelul de dezvoltare materială și spirituală a unui popor","Civilizație fluvială|Civilizație formată lângă un mare fluviu, care depinde de revărsări și de irigare","Sistem de irigare|Canale și mecanisme care duc apa departe de râu","Hamiți|Grup de popoare din nordul Africii","Semiluna Fertilă|Regiune foarte roditoare în formă de lună, numită și Cornul Abundenței","Mesopotamia|„Între două râuri”, adică între Tigru și Eufrat","Civilizația Harappa|Civilizația din Valea Indului (3000–1600 î.H.)","Arienii|Triburi indo-europene de păstori care au venit în India","Drumul Mătăsii|Drum comercial între Marea Mediterană și estul Asiei","Drumul Regilor|Drum comercial între Egipt și Mesopotamia","Mâl|Pământ negru și roditor lăsat de Nil după revărsare"],
+quiz:["Pe ce fluviu s-a dezvoltat Egiptul?|Nil|Tigru|Gange|Yangtze","Ce înseamnă „Mesopotamia”?|Între două râuri|Țara soarelui|Pământ roditor|Lângă mare","Între ce fluvii era Mesopotamia?|Tigru și Eufrat|Ind și Gange|Nil și Iordan|Huang He și Yangtze","Pe ce fluvii s-a dezvoltat India Antică?|Ind și Gange|Tigru și Eufrat|Nil|Huang He și Yangtze","Cum se mai numea Semiluna Fertilă?|Cornul Abundenței|Drumul Regilor|Valea Regilor|Țara Fluviilor","Cum se mai numește fluviul Huang He?|Fluviul Galben|Fluviul Albastru|Fluviul Roșu|Fluviul Negru","Unde s-a dezvoltat Civilizația Harappa?|În Valea Indului|În Valea Nilului|În Mesopotamia|În China","Ce popor a creat Civilizația Harappa?|Dravidienii|Arienii|Perșii|Fenicienii","De ce origine erau chinezii?|Sino-tibetană|Semită|Indo-europeană|Hamită","De ce origine erau egiptenii?|Semito-hamită|Sino-tibetană|Indo-europeană|Dravidiană","De unde au venit indo-europenii?|Din Asia Centrală|Din Africa|Din Europa de Vest|Din China","Ce lăsa Nilul pe câmpuri după revărsare?|Mâl negru, roditor|Nisip|Sare|Pietre","Cine a scris că în Egipt agricultura se face cu muncă puțină?|Diodor din Sicilia|Herodot|Hammurabi|Confucius","Ce meșteșug era specific fenicienilor?|Producerea sticlei|Producerea mătăsii|Porțelanul|Papirusul","Ce produceau chinezii?|Mătase și porțelan|Sticlă și purpură|Papirus|Zahăr din trestie","Ce drum lega Egiptul de Mesopotamia?|Drumul Regilor|Drumul Mătăsii|Drumul Regal|Drumul Nilului","Ce exporta India?|Piper, perle, pietre prețioase|Mătase și ceai|Papirus și aur|Sticlă și vin","Ce fel de agricultură se practica în China?|Agricultura pe straturi|Doar păstoritul|Agricultura fără apă|Vânătoarea"],
+tf:["Primele civilizații au apărut lângă marile fluvii.|1|","Egiptul s-a dezvoltat pe valea fluviului Gange.|0|Egiptul s-a dezvoltat pe valea Nilului.","Semiluna Fertilă se mai numea Cornul Abundenței.|1|","Fenicienii erau de origine semită.|1|","Se știe exact de ce a dispărut Civilizația Harappa.|0|Motivele dispariției nu sunt cunoscute.","Perșii s-au așezat pe Podișul Iranian.|1|","India avea patru anotimpuri.|0|India avea două anotimpuri: iarna rece și uscată și vara toridă.","Drumul Mătăsii lega Marea Mediterană de estul Asiei.|1|","Casele din Harappa erau din cărămidă arsă și aveau canalizare.|1|","Chinezii erau de origine semită.|0|Chinezii erau de origine sino-tibetană."],
+fill:["Mesopotamia se afla între fluviile Tigru și ___.|Eufrat","Egiptul s-a dezvoltat pe valea fluviului ___.|Nil","Huang He se mai numește Fluviul ___.|Galben","Yangtze se mai numește Fluviul ___.|Albastru","Civilizația din Valea Indului se numește Civilizația ___.|Harappa","Indo-europenii au venit din Asia ___.|Centrală","Semiluna Fertilă se mai numea Cornul ___.|Abundenței"],
+chrono:[],
+oral:["De ce primele civilizații se numesc fluviale?|Pentru că au apărut lângă marile fluvii, care le dădeau oamenilor apă, hrană, irigare și o cale de comerț.|fluvi,apa/hrana,irigare/comert","Numește cele patru civilizații fluviale și fluviile lor.|Mesopotamia pe Tigru și Eufrat, Egiptul pe Nil, India pe Ind și Gange, China pe Huang He și Yangtze.|nil,tigru/eufrat,ind/gange,huang/yangtze/galben","Ce știi despre Civilizația Harappa?|S-a dezvoltat în Valea Indului, între 3000 și 1600 î.H. Avea orașe cu străzi drepte, case din cărămidă arsă cu canalizare și un sistem de scriere.|ind,caramid,canalizare/strazi,scriere","Care erau ocupațiile principale ale oamenilor?|Agricultura și creșterea animalelor, la care s-au adăugat meșteșugurile și comerțul.|agricultur,animal,mestesug/comert","Ce drumuri comerciale vestite cunoști?|Drumul Regilor, între Egipt și Mesopotamia, și Drumul Mătăsii, între Mediterana și estul Asiei.|regilor,matasii"],
+tutor:"civilizațiile fluviale și fluviile lor, natura fiecărei țări, popoarele și originea lor, Civilizația Harappa, ocupațiile, meșteșugurile și comerțul"},
+
+{id:"t2",nr:"Tema 2",title:"Modul de viață în Orientul Antic",color:"#15803d",
+explain:[
+"Modul de viață înseamnă alimentația, locuința, vestimentația, familia și tradițiile. El depindea de natură, de ocupație, de bogăție și de tradiții.",
+"Alimentația. În Egipt se mânca pâine, legume, fructe și pește, iar carnea doar rar. Se bea bere din orz și vin din curmale sau din struguri. În Mesopotamia hrana de bază era orzul, grâul și curmalele, iar carnea o mâncau doar bogații. Pâinea era o turtă plată, nedospită, și existau peste 300 de cuvinte pentru ea. Curmalul era numit arborele vieții și regele oazelor. Herodot scria că babilonienii foloseau ulei de susan, nu de măsline.",
+"În China grâul era mâncarea tradițională, iar orezul îl mâncau doar familiile bogate. Chinezii mâncau cu bețișoare și au creat tradiția servirii ceaiului. În India existau tabuuri, adică interdicții sfinte: nu se mânca carne de vită, porc, cocoș și lebădă. Mulți indieni erau vegetarieni și țineau post.",
+"Locuința. În Egipt săracii trăiau în colibe din papirus sau în case din cărămidă crudă, iar bogații în case cu două niveluri. În Mesopotamia casele erau dreptunghiulare, cu o curte interioară, și erau construite din cărămidă crudă, pentru că piatra se găsea greu. În China acoperișul trainic era simbolul protecției: la bogați din olane, la săraci din rogojini unse cu lut. În India bogații aveau case cu terasă și grădină, iar săracii o singură cameră.",
+"Portul. Egiptencele purtau cămăși lungi din in, iar bărbații o fustă scurtă cu centură. Preoții aveau capul ras, iar mulți oameni umblau desculți. Egiptenii iubeau podoabele. În Mesopotamia bărbații purtau tunică și o eșarfă lungă în care își țineau sabia și pumnalul, iar iarna cojoc. Aveau barba lungă, încrețită cu fierul.",
+"În China bărbații purtau pantaloni, cămașă, halat și brâu. Lungimea halatului arăta poziția socială, iar a merge desculț era necuviincios. Cei bogați purtau pantofi de mătase. În India bărbații purtau dhoti, o fâșie de pânză înfășurată pe șolduri și picioare. Bogații purtau in și mătase, săracii bumbac. Bijuteriile arătau statutul social și material.",
+"Familia era, de obicei, monogamă, adică un soț și o soție. În Egipt femeia era stăpâna casei și egală cu bărbatul. În Mesopotamia copiii puteau fi vânduți pentru datorii. În China cel mai bătrân bărbat avea putere nelimitată. În India nu erau permise căsătoriile între caste, iar moșteneau doar băieții.",
+"Sărbătorile. În Egipt Anul Nou era sărbătoarea revărsării Nilului. În Mesopotamia Anul Nou ținea 12 zile și era legat de zeul Marduk: nu se lucra, nu se judeca și nu se pedepsea nimeni. În China la Anul Nou participau 120 de băieți cu tobe, erau artificii, iar sărbătoarea se încheia cu Festivalul Lampioanelor. În India se iubeau cântecul, dansul, poveștile și jocul de șah."
+],
+cards:["Cărămidă crudă|Cărămidă din argilă cu paie, fibre de in sau păr de cal","Rogojină|Împletitură din papură sau rogoz","Tabu|Interdicție sfântă, pedepsită aspru","Dhoti|Fâșie de pânză purtată de bărbații din India","Curmalul|„Arborele vieții” și „regele oazelor”","Familie monogamă|Familie cu un singur soț și o singură soție","Festivalul Lampioanelor|Sfârșitul Anului Nou chinezesc","Olane|Țiglele din care bogații chinezi făceau acoperișul"],
+quiz:["Care sunt componentele modului de viață?|Alimentația, locuința, vestimentația, familia, tradițiile|Doar hrana și casa|Războaiele și regii|Scrisul și religia","Ce ulei foloseau babilonienii?|Ulei de susan|Ulei de măsline|Ulei de floarea-soarelui|Ulei de ricin","Cum era numit curmalul?|Arborele vieții|Regele munților|Copacul de aur|Pomul sfânt","Cine mânca orez în China Antică?|Doar familiile bogate|Toată lumea|Doar soldații|Nimeni","Ce nu mâncau indienii, din cauza tabuului?|Carne de vită și de porc|Orez|Legume|Banane","Din ce era făcută cărămida crudă?|Din argilă cu paie|Din piatră|Din lemn|Din bambus","Ce simboliza acoperișul în China?|Protecția|Bogăția|Puterea împăratului|Credința","Din ce erau colibele săracilor din Egipt?|Din papirus|Din piatră|Din bambus|Din sticlă","Ce purtau bărbații egipteni?|Fustă scurtă cu centură|Pantaloni și halat|Dhoti|Cojoc","Ce purtau bărbații din India?|Dhoti|Halat|Tunică cu eșarfă|Fustă scurtă","Ce arăta lungimea halatului în China?|Poziția socială|Vârsta|Anotimpul|Religia","Unde femeia era egală cu bărbatul?|În Egipt|În China|În India|În Mesopotamia","Unde copiii puteau fi vânduți pentru datorii?|În Mesopotamia|În Egipt|În India|În Fenicia","Câte zile ținea Anul Nou în Mesopotamia?|12 zile|3 zile|7 zile|30 de zile","Cu ce se încheia Anul Nou chinezesc?|Cu Festivalul Lampioanelor|Cu revărsarea Nilului|Cu carnavalul lui Marduk|Cu un post","Ce sărbătoreau egiptenii la Anul Nou?|Revărsarea Nilului|Recolta de orez|Zeul Marduk|Luna plină"],
+tf:["În China era necuviincios să mergi desculț.|1|","În Mesopotamia casele erau construite mai ales din piatră.|0|Erau din cărămidă crudă, pentru că piatra se găsea greu.","Preoții egipteni aveau capul ras.|1|","În India erau permise căsătoriile între caste.|0|Căsătoriile între caste nu erau permise.","Familia în Orientul Antic era, de obicei, monogamă.|1|","În Egipt carnea se mânca în fiecare zi.|0|În Egipt carnea se mânca rar.","În Mesopotamia existau peste 300 de cuvinte pentru pâine.|1|","Bijuteriile arătau statutul social al omului.|1|","La Anul Nou chinezesc participau 120 de băieți cu tobe.|1|","În India moșteneau și fetele.|0|Drept la moștenire aveau numai băieții."],
+fill:["Curmalul era numit „arborele ___”.|vieții","Bărbații din India purtau ___.|dhoti","Anul Nou din Mesopotamia era legat de zeul ___.|Marduk","Anul Nou chinezesc se încheia cu Festivalul ___.|Lampioanelor","Interdicția sfântă se numește ___.|tabu","Babilonienii foloseau ulei de ___.|susan"],
+chrono:[],
+oral:["Ce mâncau oamenii în Egipt și în Mesopotamia?|În Egipt pâine, legume, fructe și pește. În Mesopotamia orz, grâu și curmale. Carnea se mânca rar.|paine,peste/legume,orz/grau,curmal","Cum erau casele în China și ce simboliza acoperișul?|Acoperișul trainic era simbolul protecției: la bogați din olane, la săraci din rogojini unse cu lut. Mobila era din bambus.|acoperis,protecti,olane/bambus/rogojin","Cum era familia în Egipt și în China?|În Egipt femeia era stăpâna casei și egală cu bărbatul. În China cel mai bătrân bărbat avea putere nelimitată.|egal,batran/putere","Cum se sărbătorea Anul Nou în China?|Participau 120 de băieți cu tobe, erau artificii, iar la sfârșit era Festivalul Lampioanelor.|tobe/baieti,artificii,lampioan","Cum se îmbrăcau egiptenii?|Femeile purtau cămăși lungi din in, bărbații fustă scurtă cu centură, preoții aveau capul ras, mulți umblau desculți și iubeau podoabele.|in,fusta,descult/podoab/ras"],
+tutor:"alimentația, locuința, portul, familia și sărbătorile în Egipt, Mesopotamia, China și India"},
+
+{id:"t3",nr:"Tema 3",title:"Orașe-state, regate și imperii: Mesopotamia, Babilonul, Egiptul",color:"#b45309",
+explain:[
+"Primele state au apărut în mileniul al IV-lea î.H. Statul a apărut ca să organizeze munca, de exemplu canalele de irigare, dar și viața religioasă, ordinea și apărarea. Statele au avut trei forme: orașe-state, regate și imperii.",
+"Orașul-stat era un oraș cu pământurile din jur, condus de un rege. Regatul s-a format din orașe-state sau din triburi ale aceluiași popor. Imperiul s-a format din regatele care au cucerit alte teritorii, așa că avea multe popoare.",
+"În Mesopotamia sumerienii erau organizați în orașe-state: Ur, Uruk, Nippur, Eridu, Umma și Lagaș. Regele se numea lugal și avea putere politică și religioasă. La sfârșitul mileniului al III-lea î.H., regele Sargon i-a supus pe sumerieni și a creat primul imperiu din Asia, Imperiul Akadian, care a durat puțin. În secolul al VII-lea î.H. cel mai puternic a fost Imperiul Asirian, cu capitala la Ninive.",
+"Societatea din Mesopotamia avea în frunte regele-preot, apoi aristocrația, apoi oamenii liberi, adică țăranii și meșteșugarii, iar la urmă sclavii.",
+"Babilonul a fost un oraș-stat pe malurile Eufratului. Primul lui rege a fost Sumulael. Cel mai mare rege a fost Hammurabi, între 1792 și 1750 î.H. El a unit aproape toată Mesopotamia și a creat un imperiu, a construit canale și temple și avea o armată permanentă. Zeul Marduk a devenit zeul principal.",
+"În 1760 î.H. a apărut Codul lui Hammurabi, una dintre primele culegeri de legi, cu 282 de articole, sculptate pe o stelă de piatră. Codul împărțea oamenii în trei categorii: amelu, adică bogații, mușkenum, adică oamenii obișnuiți, și ardu, adică sclavii. După moartea lui Hammurabi imperiul s-a destrămat.",
+"A doua înflorire a Babilonului a fost sub regele Nabucodonosor al II-lea, între 605 și 562 î.H. Babilonul a devenit cel mai mare oraș din Orientul Antic, cu 200.000 de locuitori. Aici era ziguratul Etemenanki, înalt de 91 de metri, numit în Biblie Turnul Babel, și Poarta Zeiței Ishtar, înaltă de 12 metri. În 538 î.H. Babilonul a fost cucerit de perși.",
+"În Egipt, satele de pe Nil se numeau nome. Ele s-au unit în două regate: Egiptul de Sus și Egiptul de Jos. În anul 3000 î.H. regele Menes le-a unit și s-a proclamat faraon. Faraonul era considerat fiul zeului Ra și avea putere nelimitată. Era ajutat de Consiliul celor 10. Capitala a fost Memfis.",
+"În Regatul Mijlociu capitala a fost Teba, lângă Valea Regilor, unde erau înmormântați faraonii. Din 1550 î.H., în Regatul Nou, Egiptul a fost cel mai puternic. Tutmes al III-lea a făcut cuceriri. Akhenaton a impus un singur zeu, Aton. Tutankhamon a revenit la vechii zei. Ramses al II-lea a fost cel mai puternic faraon și conducea singur armata în luptă. Nefertiti a fost regina, soția lui Amenhotep al IV-lea. În 671 î.H. Egiptul a fost cucerit de asirieni."
+],
+cards:["Stat|Organizarea care conduce un teritoriu și oamenii de pe el","Oraș-stat|Un oraș cu pământurile din jur, condus de un rege","Regat|Stat condus de un rege","Imperiu|Stat mare, condus de un împărat, cu multe popoare cucerite","Dinastie|Familie în care puterea trece de la părinte la copil","Templu|Clădire dedicată zeilor","Zigurat|Templu în formă de piramidă cu trepte, din Mesopotamia","Piramidă|Mormânt uriaș de piatră pentru faraoni","Lugal|Regele unui oraș-stat sumerian","Nome|Obștile sătești de pe valea Nilului","Faraon|Conducătorul Egiptului, „fiul zeului Ra”","Codul lui Hammurabi|Culegere de 282 de legi pe o stelă de piatră (1760 î.H.)","Etemenanki|Ziguratul din Babilon, numit Turnul Babel"],
+quiz:["Când au apărut primele state?|În mileniul al IV-lea î.H.|În anul 1000 î.H.|În secolul I d.H.|În mileniul al II-lea î.H.","Cum se numea regele unui oraș-stat sumerian?|Lugal|Faraon|Rajah|Satrap","Cine a creat primul imperiu din Asia?|Sargon|Hammurabi|Menes|Cirus","Care era capitala Imperiului Asirian?|Ninive|Babilon|Memfis|Teba","Câte articole avea Codul lui Hammurabi?|282|100|28|1000","Când a fost elaborat Codul lui Hammurabi?|1760 î.H.|3000 î.H.|538 î.H.|671 î.H.","Cine erau „amelu”?|Oamenii bogați|Sclavii|Oamenii obișnuiți|Preoții egipteni","Cine erau „ardu”?|Sclavii|Oamenii bogați|Negustorii|Regii","Cine a fost primul rege al Babilonului?|Sumulael|Hammurabi|Sargon|Nabucodonosor","Ce era Etemenanki?|Un zigurat, Turnul Babel|O piramidă|Un palat|Un pod","Câți locuitori avea Babilonul sub Nabucodonosor al II-lea?|Circa 200.000|Circa 2.000|Circa 20 de milioane|Circa 500","Cine a cucerit Babilonul în 538 î.H.?|Perșii|Asirienii|Egiptenii|Grecii","Cine a unit Egiptul în 3000 î.H.?|Menes|Ramses al II-lea|Tutmes al III-lea|Akhenaton","Al cui fiu era considerat faraonul?|Al zeului Ra|Al zeului Marduk|Al cerului|Al lui Osiris","Care a fost capitala Egiptului în Regatul Mijlociu?|Teba|Memfis|Ninive|Babilon","Ce faraon a impus un singur zeu, Aton?|Akhenaton|Tutankhamon|Ramses al II-lea|Menes","Care faraon conducea singur armata în luptă?|Ramses al II-lea|Tutankhamon|Menes|Akhenaton","Cine a cucerit Egiptul în 671 î.H.?|Asirienii|Perșii|Babilonienii|Hunii","Cine a fost Nefertiti?|Regina, soția lui Amenhotep al IV-lea|O zeiță|Un faraon|O preoteasă din Babilon","Cum se numea poarta celebră a Babilonului?|Poarta Zeiței Ishtar|Poarta Soarelui|Poarta lui Marduk|Poarta Regilor"],
+tf:["Imperiul cuprindea multe popoare.|1|","Codul lui Hammurabi era scris pe papirus.|0|Era sculptat pe o stelă de piatră.","Imperiul Akadian a durat foarte mult.|0|A avut o existență scurtă.","Faraonul avea putere nelimitată.|1|","Tutankhamon a revenit la zeii tradiționali.|1|","Poarta Zeiței Ishtar avea 12 metri înălțime.|1|","Babilonul se afla pe malurile Nilului.|0|Se afla pe ambele maluri ale Eufratului.","Satele de pe valea Nilului se numeau nome.|1|","Menes a unit Egiptul de Sus și Egiptul de Jos.|1|","Ziguratul Etemenanki era numit în Biblie Turnul Babel.|1|"],
+fill:["Regele sumerian se numea ___.|lugal","Primul imperiu din Asia a fost Imperiul ___.|Akadian","Codul lui Hammurabi avea ___ de articole.|282","Turnul Babel se numea ___.|Etemenanki","Egiptul a fost unit de regele ___.|Menes","Capitala Asiriei era ___.|Ninive","Faraonul era considerat fiul zeului ___.|Ra"],
+chrono:["Apar orașele-state sumeriene|mileniul al IV-lea î.H.","Menes unește Egiptul|3000 î.H.","Sargon creează Imperiul Akadian|sfârșitul mileniului al III-lea î.H.","Domnia lui Hammurabi|1792–1750 î.H.","Începe Regatul Nou în Egipt|1550 î.H.","Domnia lui Ramses al II-lea|1279–1213 î.H.","Asirienii cuceresc Egiptul|671 î.H.","Domnia lui Nabucodonosor al II-lea|605–562 î.H.","Perșii cuceresc Babilonul|538 î.H."],
+oral:["Ce forme a avut statul în Orientul Antic?|Orașul-stat, regatul și imperiul.|oras,regat,imperi","Ce știi despre Hammurabi?|A fost regele Babilonului între 1792 și 1750 î.H., a unit Mesopotamia într-un imperiu și a creat Codul lui Hammurabi, cu 282 de legi.|babilon,cod/legi,imperi/mesopotamia","Ce categorii sociale avea Codul lui Hammurabi?|Amelu, adică bogații, mușkenum, adică oamenii obișnuiți, și ardu, adică sclavii.|amelu/bogat,muskenum/obisnuit,ardu/sclav","Cine a fost faraonul și ce puteri avea?|Conducătorul Egiptului, considerat fiul zeului Ra, cu putere nelimitată, politică și religioasă.|ra,nelimitat/putere,egipt","Ce construcții vestite avea Babilonul lui Nabucodonosor al II-lea?|Ziguratul Etemenanki, adică Turnul Babel, Poarta Zeiței Ishtar, un pod lung și un zid dublu.|etemenanki/zigurat/babel,ishtar/poarta"],
+tutor:"formele statului, orașele-state sumeriene, Sargon, Asiria, Babilonul lui Hammurabi și Codul lui Hammurabi, Nabucodonosor al II-lea, Egiptul faraonilor de la Menes la Ramses al II-lea"},
+
+{id:"t4",nr:"Tema 4",title:"Orașe-state, regate și imperii: Persia, India, China",color:"#be123c",
+explain:[
+"În Persia, India și China statele au devenit imperii, iar conducătorii aveau toată puterea.",
+"Imperiul Persan. Triburile perșilor au fost unite de Achaemenes în jurul anului 700 î.H. Cirus al II-lea cel Mare a creat imperiul: a cucerit Lidia, orașele grecești din Asia Mică, Babilonul, Siria, Fenicia și Israelul. Cambyses al II-lea a cucerit Egiptul și l-a făcut satrapie, adică provincie.",
+"Sub Darius I cel Mare, între 522 și 486 î.H., imperiul a fost cel mai mare. Darius l-a împărțit în 20 de provincii conduse de satrapi, numiți ochii și urechile regelui. A construit drumuri, mai ales Drumul Regal, a bătut o monedă de aur numită dareic și a creat trupele Cei zece mii de nemuritori: când unul cădea, era înlocuit imediat.",
+"În anul 500 î.H. au început războaiele medice, dintre perși și greci. În 490 î.H. Darius a fost învins de atenieni la Marathon. Fiul lui, Xerxes I, a pierdut și el în fața grecilor. Imperiul Persan a căzut sub loviturile lui Alexandru cel Mare, regele Macedoniei. Capitalele erau Susa și Persepolis.",
+"India. Centrul Indiei a fost Valea Gangelui, unde existau 16 regate conduse de rajahi. Chandragupta a fondat Imperiul Maurya. Cel mai mare rege a fost Așoka, care a ajutat la dezvoltarea budismului. Din această perioadă sunt Legile lui Manu, reguli religioase și morale scrise în versuri.",
+"Au urmat Imperiul Kușan, care făcea comerț între China și Marea Mediterană, și Imperiul Gupta, epoca clasică a Indiei. Cel mai vestit rege Gupta a fost Chandragupta al II-lea, cu o mare înflorire culturală. Imperiul Gupta a fost distrus de huni.",
+"Societatea din India era împărțită în caste: brahmanii, adică preoții; kșatrya, cei care conduceau și luptau; vaisya, agricultorii, meșteșugarii și negustorii; și sudra, care slujeau celelalte caste. Cei mai de jos erau intangibilii. Nu te puteai căsători cu cineva din altă castă și nu puteai trece în altă castă. Castele nu depindeau de avere, ci de cultura ariană.",
+"China. Dinastiile chineze au fost, pe rând: Xia, Shang, Zhou, Qin și Han. Împăratul era numit fiul cerului și stăpânul pământului. Qin Shi Huangdi a unit China, a împărțit-o în 36 de provincii, cu capitala la Xianyang, și a terminat Marele Zid Chinezesc, ca apărare de barbari.",
+"În timpul dinastiei Han, sub împăratul Wen-ti, funcționarii învățau în școli și dădeau examene. Au avut loc răscoalele Sprâncenelor Roșii și Turbanelor Galbene. În anul 220 imperiul s-a împărțit în trei regate: Wei, Shu și Wu. Societatea chineză avea aristocrați, oameni liberi și sclavi."
+],
+cards:["Suveran|Conducătorul unui stat, regele","Satrapie|Provincie a Imperiului Persan, condusă de un satrap","Rajah|Conducătorul unui stat în India Antică","Hun|Om din triburile mongole nomade","Războaiele medice|Războaiele dintre perși și greci (500–449 î.H.)","Dareic|Moneda de aur a lui Darius I","Cei zece mii de nemuritori|Trupele speciale ale lui Darius I","Legile lui Manu|Reguli religioase și morale ale Indiei, scrise în versuri","Brahmanii|Casta preoților","Kșatrya|Casta conducătorilor și a războinicilor","Vaisya|Casta agricultorilor, meșteșugarilor și negustorilor","Sudra|Casta celor care slujeau celelalte caste","Intangibilii|Cei mai de jos din India: gropari, gunoieri","Marele Zid Chinezesc|Zidul terminat de Qin Shi Huangdi pentru apărare"],
+quiz:["Cine a unit triburile perșilor?|Achaemenes|Darius I|Cirus al II-lea|Xerxes I","Cine a transformat Persia în imperiu?|Cirus al II-lea cel Mare|Cambyses al II-lea|Alexandru cel Mare|Așoka","Cine a cucerit Egiptul pentru perși?|Cambyses al II-lea|Darius I|Cirus al II-lea|Xerxes I","În câte provincii a împărțit Darius I imperiul?|20|36|16|12","Cum se numea moneda de aur a lui Darius?|Dareic|Drahmă|Dinar|Leu","Unde a fost învins Darius în 490 î.H.?|La Marathon|La Babilon|La Ninive|La Susa","Cine a cucerit Imperiul Persan?|Alexandru cel Mare|Hunii|Asirienii|Qin Shi Huangdi","Cine a fondat Imperiul Maurya?|Chandragupta|Așoka|Toramana|Chandragupta al II-lea","Ce religie a ajutat Așoka să se dezvolte?|Budismul|Confucianismul|Taoismul|Cultul lui Aton","Ce sunt Legile lui Manu?|Reguli religioase și morale|Un cod persan|O carte chineză|Legile Babilonului","Care era casta preoților în India?|Brahmanii|Kșatrya|Vaisya|Sudra","Ce făceau kșatrya?|Conduceau și luptau|Erau preoți|Erau agricultori|Slujeau celelalte caste","Cine a distrus Imperiul Gupta?|Hunii|Perșii|Arienii|Grecii","Cine a unit China?|Qin Shi Huangdi|Wen-ti|Confucius|Lao Zi","Care era capitala lui Qin Shi Huangdi?|Xianyang|Beijing|Ninive|Teba","În câte provincii era împărțit imperiul Qin?|36|20|16|3","Cum era numit împăratul chinez?|Fiul cerului|Fiul zeului Ra|Lugal|Rajah","În ce trei regate s-a împărțit China în 220?|Wei, Shu, Wu|Xia, Shang, Zhou|Qin, Han, Ming|Maurya, Gupta, Kușan"],
+tf:["Satrapii erau numiți „ochii și urechile regelui”.|1|","Darius I a câștigat bătălia de la Marathon.|0|A fost înfrânt de atenieni la Marathon, în 490 î.H.","Numărul „nemuritorilor” rămânea mereu același.|1|","În India puteai trece dintr-o castă în alta.|0|Nu se putea trece dintr-o castă în alta.","Imperiul Gupta a fost epoca clasică a Indiei.|1|","Qin Shi Huangdi a terminat Marele Zid Chinezesc.|1|","În timpul dinastiei Han funcționarii dădeau examene.|1|","Castele se stabileau după avere.|0|Se stabileau după cultura ariană, nu după avere.","Războaiele medice au fost între perși și egipteni.|0|Au fost între perși și greci.","Imperiul Kușan făcea comerț între China și Marea Mediterană.|1|"],
+fill:["Provincia persană se numea ___.|satrapie","Moneda lui Darius I se numea ___.|dareic","Conducătorul unui stat din India se numea ___.|rajah","Darius I a fost învins în bătălia de la ___.|Marathon","Capitala lui Qin Shi Huangdi era ___.|Xianyang","Casta preoților din India: ___.|brahmanii"],
+chrono:["Dinastia Xia în China|sec. XXI–XVI î.H.","Dinastia Shang|sec. XVI–XI î.H.","Dinastia Zhou|din 1027 î.H.","Achaemenes unește triburile perșilor|cca 700 î.H.","Domnia lui Cirus al II-lea cel Mare|559–530 î.H.","Domnia lui Darius I cel Mare|522–486 î.H.","Bătălia de la Marathon|490 î.H.","Chandragupta fondează Imperiul Maurya|321 î.H.","Qin Shi Huangdi unește China|221 î.H.","Începe Imperiul Han|207 î.H.","China se împarte în trei regate|220 d.H.","Domnia lui Chandragupta al II-lea|375–415 d.H."],
+oral:["Ce a făcut Darius I cel Mare pentru imperiu?|A împărțit imperiul în 20 de provincii cu satrapi, a construit Drumul Regal, a bătut moneda de aur dareic și a creat trupele nemuritorilor.|provinci/satrap,drum,dareic/moneda","Numește castele din India și ce făceau.|Brahmanii erau preoții, kșatrya conduceau și luptau, vaisya erau agricultori, meșteșugari și negustori, iar sudra îi slujeau pe ceilalți.|brahman,ksatrya/razboinic,vaisya/agricultor,sudra","Ce a realizat Qin Shi Huangdi?|A unit China, a împărțit-o în 36 de provincii, cu capitala la Xianyang, și a terminat Marele Zid Chinezesc.|unit/unific,provinci,zid","Cum a căzut Imperiul Persan?|După războaiele cu grecii a intrat în declin și a căzut în urma expedițiilor lui Alexandru cel Mare.|alexandru","Ce imperii au existat în India Antică?|Imperiul Maurya, Imperiul Kușan și Imperiul Gupta.|maurya,kusan,gupta"],
+tutor:"Imperiul Persan (Cirus, Cambyses, Darius I, războaiele medice), India (Maurya, Așoka, Legile lui Manu, Kușan, Gupta, castele), China (dinastiile, Qin Shi Huangdi, Marele Zid, dinastia Han)"},
+
+{id:"t5",nr:"Tema 5",title:"Cultura și civilizația Orientului Antic",color:"#6d28d9",
+explain:[
+"Religia era foarte importantă: prin ea oamenii explicau natura și evenimentele. Toate popoarele Orientului Antic erau politeiste, adică credeau în mai mulți zei.",
+"În Egipt zeii aveau chip de om, de animal sau amestecat. Amon-Ra era zeul soarelui și creatorul lumii. Osiris era zeul lumii morților. Isis era mama zeilor și ocrotea căsătoria. Seth era zeul răului. Thot era zeul lunii și al înțelepciunii, înfățișat ca ibis sau babuin, iar lui i se atribuie inventarea scrisului. Bastet era zeița-pisică. Fiecare capitală avea zeul ei: Ra la Heliopolis, Ptah la Memfis, Amon la Teba.",
+"În Mesopotamia, Anu era zeul cerului, Enlil al aerului, Enki-Ea al apelor dulci și al dreptății, Ninhursag era zeița-mamă, iar Inanna ocrotea dragostea. În Babilon zeul principal era Marduk.",
+"În China zeul suprem era cerul, iar regii se numeau fiii cerului. Chinezii respectau cultul strămoșilor. Confucius a creat confucianismul, cu reguli morale și virtuți, iar Lao Zi a creat taoismul.",
+"În India, Brahma era creatorul lumii, Vișnu era ocrotitorul, Șiva era distrugătorul, iar Ganesha, cu cap de elefant, era zeul învățăturii. Lakshmi era zeița bogăției, sărbătorită de Diwali. India este patria mai multor religii: brahmanismul, jainismul, șivaismul, vișnuismul și budismul.",
+"Știința a apărut din nevoi practice: măsurarea pământului, calcularea recoltei, revărsările râurilor și vindecarea oamenilor. Mesopotamienii numărau în 60. De aceea ora are 60 de minute, ziua are 24 de ore, iar cercul 360 de grade. Egiptenii cunoșteau aritmetica și geometria și măsurau lichidele în hekata, de 4 litri și jumătate. Indienii au inventat sistemul zecimal și cifra zero. Chinezii au aflat că cercul e de ceva mai mult de trei ori mai lung decât diametrul.",
+"Mesopotamienii aveau săptămâna de 7 zile și puteau prevedea eclipsele. Tot acolo a apărut astrologia. Chinezii au făcut o hartă a cerului cu 2.500 de stele. Medicii antici aveau specializări: dentiști, chirurgi, medici pentru inimă și pentru ochi. Chinezii au introdus anestezia și acupunctura, iar indienii au scris tratatul Ayurveda, adică știința vieții.",
+"Artele. Simbolul Egiptului sunt piramidele: piramida în trepte a lui Zoser și piramidele de la Giza ale lui Kheops, Khefren și Mikerinos. Piramida lui Kheops este una dintre minunile lumii. Tot în Egipt sunt templele de la Karnak și Luxor. În Mesopotamia se construiau zigurate și palate-fortărețe. Chinezii aveau acoperișuri curbate ca aripile de fazan. Indienii au construit templul Marea Stupă.",
+"În sculptură sunt vestite Marele Sfinx de la Giza, masca de aur a lui Tutankhamon, statuile lui Gudea, Stindardul din Ur și soldații din ceramică din mormântul lui Qin Shi Huangdi. Codul lui Hammurabi este sculptat pe Stela de la Susa, aflată la Muzeul Luvru din Paris. În China caligrafia era o artă în sine, iar pictorii iubeau peisajele cu munți.",
+"Multe invenții ale Orientului Antic le folosim și azi: sumerienii au inventat roata, fenicienii sticla și purpura, indienii șahul, iar chinezii hârtia, porțelanul, mătasea, busola, ceasul cu apă și praful de pușcă."
+],
+cards:["Cultură|Tot ce a creat omenirea: lucruri și idei","Panteon|Toți zeii unei religii sau templul tuturor zeilor","Zeitate|Zeu, divinitate","Politeism|Credința în mai mulți zei","Amon-Ra|Zeul egiptean al soarelui, creatorul lumii","Osiris|Zeul egiptean al lumii morților","Isis|Mama zeilor egipteni, ocrotitoarea căsătoriei","Thot|Zeul egiptean al lunii și înțelepciunii, inventatorul scrisului","Marduk|Zeul principal al Babilonului","Brahma|Zeul indian creator al lumii","Confucianismul|Învățătura lui Confucius despre virtuți și reguli morale","Ayurveda|Tratat indian de medicină, „știința vieții”","Hekata|Unitate egipteană de măsură: 4,5 litri","Sistem sexagesimal|Numărarea în 60, de la mesopotamieni"],
+quiz:["Ce înseamnă politeism?|Credința în mai mulți zei|Credința într-un singur zeu|Lipsa religiei|Cultul strămoșilor","Cine era zeul soarelui la egipteni?|Amon-Ra|Osiris|Seth|Thot","Ce zeu egiptean a inventat scrisul?|Thot|Osiris|Bes|Ra","Cine era zeul lumii morților în Egipt?|Osiris|Isis|Shu|Geb","Cine era zeul principal al Babilonului?|Marduk|Anu|Brahma|Amon-Ra","Care era zeitatea supremă în China?|Cerul|Soarele|Pământul|Ploaia","Cine a creat confucianismul?|Confucius|Lao Zi|Buddha|Așoka","Cine era creatorul lumii la indieni?|Brahma|Șiva|Vișnu|Ganesha","Ce zeu indian avea cap de elefant?|Ganesha|Vișnu|Krișna|Brahma","Cine număra în 60?|Mesopotamienii|Egiptenii|Indienii|Chinezii","Cine a inventat cifra zero?|Indienii|Egiptenii|Grecii|Fenicienii","Câte zile avea săptămâna la mesopotamieni?|7|10|5|12","Cine a introdus acupunctura?|Chinezii|Egiptenii|Indienii|Perșii","Care piramidă este una dintre minunile lumii?|Piramida lui Kheops|Piramida lui Zoser|Piramida lui Mikerinos|Piramida lui Menes","Unde se află stela cu Codul lui Hammurabi?|La Muzeul Luvru, Paris|La Cairo|La Babilon|La Londra","Ce au inventat sumerienii?|Roata|Hârtia|Sticla|Busola","Ce au inventat fenicienii?|Sticla și purpura|Busola|Șahul|Porțelanul","Ce au inventat indienii?|Șahul|Praful de pușcă|Roata|Hârtia"],
+tf:["Toate popoarele Orientului Antic erau politeiste.|1|","Isis era zeul răului.|0|Seth era zeul răului, iar Isis era mama zeilor.","Ora de 60 de minute vine de la mesopotamieni.|1|","Hekata era o unitate de 4,5 litri.|1|","Astrologia a apărut în China.|0|Astrologia a apărut în Mesopotamia.","Chinezii au introdus anestezia.|1|","Marele Sfinx se află la Giza.|1|","Chinezii au inventat busola și praful de pușcă.|1|","Ayurveda este un tratat de medicină din China.|0|Ayurveda este un tratat din India.","Lakshmi este zeița bogăției, sărbătorită de Diwali.|1|"],
+fill:["Zeul egiptean al scrisului este ___.|Thot","Zeul principal al Babilonului era ___.|Marduk","Indienii au inventat cifra ___.|zero","Cercul are ___ de grade.|360","Taoismul a fost creat de Lao ___.|Zi","Piramida în trepte este a lui ___.|Zoser","Sumerienii au inventat ___.|roata"],
+chrono:[],
+oral:["Ce înseamnă că religiile erau politeiste? Dă exemple de zei.|Oamenii credeau în mai mulți zei, de exemplu Amon-Ra și Osiris în Egipt, Marduk în Babilon, Brahma și Șiva în India.|multi/mai multi,zei,ra/osiris/marduk/brahma/siva/visnu/isis/thot","Ce am moștenit de la mesopotamieni în măsurarea timpului?|Ora de 60 de minute, ziua de 24 de ore, săptămâna de 7 zile și cercul de 360 de grade.|60,24/ora,7/saptaman/360","Ce invenții ale Orientului Antic folosim și azi?|Roata, sticla, șahul, hârtia, porțelanul, mătasea, busola, ceasul cu apă și praful de pușcă.|roat,sticl/hartie,busol/sah/matase","Ce știi despre piramidele egiptene?|Sunt simbolul Egiptului: piramida în trepte a lui Zoser și piramidele de la Giza ale lui Kheops, Khefren și Mikerinos. Piramida lui Kheops este una dintre minunile lumii.|kheops,giza,zoser/minun","Ce realizări aveau popoarele antice în medicină?|Medicii aveau specializări, făceau operații, chinezii au introdus anestezia și acupunctura, iar indienii au scris Ayurveda.|acupunctur,anestezi,ayurveda/chirurg/operati"],
+tutor:"religiile (zeii Egiptului, Mesopotamiei, Chinei și Indiei, confucianismul, taoismul), știința (matematică, astronomie, medicină), artele (piramide, zigurate, sculptură, pictură) și invențiile"},
+
+{id:"t6",nr:"Tema 6",title:"Apariția scrisului",color:"#1d4ed8",
+explain:[
+"Odată cu scrisul se termină Preistoria și începe perioada istorică. Scrisul a apărut în Orientul Antic, ca să se noteze recoltele, mărfurile, numărul oamenilor și datoriile față de templu sau de rege. Cei care scriau se numeau scribi. Scrisul îl cunoșteau preoții și unii funcționari.",
+"Prima formă de scriere a fost pictograma, un desen care înseamnă un obiect sau o idee. În Mesopotamia, la sfârșitul mileniului al IV-lea î.H., a apărut scrierea cuneiformă, cu semne în formă de cuie, pe tăblițe de lut. Avea circa 600 de semne. Regele Assurbanipal a înființat la Ninive o bibliotecă uriașă de tăblițe.",
+"Egiptenii scriau cu hieroglife, adică desene de oameni, animale și obiecte. Scrierea egipteană avea circa 750 de hieroglife. Mai târziu a apărut scrierea hieratică, pentru textele religioase, și cea demotică, adică populară. Hieroglifele au fost descifrate în 1822 de savantul francez Jean-François Champollion, cu ajutorul Pietrei de la Rosetta.",
+"În India primele scrieri sunt inscripțiile lui Așoka. În China, între 2000 și 1700 î.H., a apărut o scriere pictografică cu circa două mii de semne, care se folosește și astăzi.",
+"Alfabetul fenician, din jurul anului 1000 î.H., avea 22 de litere, doar consoane. Din el provin alfabetele latin, grec și ebraic. Grecii au adăugat vocalele: a, e, i, o, u. Litera feniciană alef a devenit alfa, iar bet a devenit beta. De aici vine cuvântul alfabet. Romanii aveau alfabetul latin cu 23 de litere, din care vin și literele noastre.",
+"Se scria pe materiale diferite. În Mesopotamia pe tăblițe de argilă, cu bețișoare din trestie. În Egipt pe papirus, piatră și pânză de in. În India pe frunze uscate de palmier. În China pe oase, bambus și mătase, cu o pensulă din păr de cămilă.",
+"Pentru foaia de papirus, miezul plantei se tăia în fâșii subțiri, care se puneau în două straturi, unul orizontal și unul vertical. Apoi se presau, se uscau la soare și se băteau cu ciocanul. Foile lipite formau un sul de până la 45 de metri. Hârtia a fost inventată în China de Tsai Lun, în anul 98, din cânepă, pânză și bumbac.",
+"Literatura avea mituri, povestiri, poeme, legende, imnuri, fabule, învățături și proverbe. În Mesopotamia s-a scris Epopeea lui Ghilgameș. În Egipt, Cartea morților și Povestea lui Sinuhet. În India, poemele Mahabharata și Ramayana. În China, Cartea cântecelor și Notele istorice ale lui Sima Qian."
+],
+cards:["Pictogramă|Un desen care înseamnă un obiect sau o idee","Alfabet|Un semn pentru fiecare sunet","Mit|Poveste sfântă despre facerea lumii, zei și eroi","Scrib|Omul care nota datele și evenimentele","Scriere cuneiformă|Semne în formă de cuie, pe tăblițe de lut","Hieroglife|Scrierea egipteană cu desene","Scriere hieratică|Scrierea egipteană pentru texte religioase","Scriere demotică|Scrierea populară egipteană","Piatra de la Rosetta|Piatra cu ajutorul căreia s-au descifrat hieroglifele","Papirus|Plantă din Egipt și foaia de scris făcută din ea","Epopeea lui Ghilgameș|Opera celebră din Mesopotamia","Mahabharata|Poem celebru din India"],
+quiz:["Ce marchează apariția scrisului?|Trecerea de la Preistorie la istorie|Apariția agriculturii|Sfârșitul Egiptului|Apariția roții","Care a fost prima formă de scriere?|Pictograma|Alfabetul|Scrierea cuneiformă|Hieroglifa","Ce scriere aveau mesopotamienii?|Cuneiformă|Hieroglifică|Pictografică chineză|Latină","Pe ce se scria în Mesopotamia?|Pe tăblițe de lut|Pe hârtie|Pe frunze de palmier|Pe mătase","Câte semne avea scrierea cuneiformă?|Circa 600|22|23|Circa 2.000","Cine a înființat biblioteca de la Ninive?|Assurbanipal|Hammurabi|Darius I|Ramses al II-lea","Câte hieroglife avea scrierea egipteană?|Circa 750|22|Circa 600|Circa 2.000","Cine a descifrat hieroglifele?|Jean-François Champollion|Herodot|Tsai Lun|Sima Qian","În ce an au fost descifrate hieroglifele?|1822|1000|1760|98","Ce a ajutat la descifrarea hieroglifelor?|Piatra de la Rosetta|Stela de la Susa|Masca lui Tutankhamon|Tăblița lui Venus","Câte litere avea alfabetul fenician?|22|23|26|600","Ce au adăugat grecii la alfabet?|Vocalele|Consoanele|Cifrele|Hieroglifele","Câte litere avea alfabetul latin al romanilor?|23|22|31|750","Cine a inventat hârtia?|Tsai Lun|Champollion|Confucius|Așoka","Pe ce se scria în India?|Pe frunze uscate de palmier|Pe tăblițe de lut|Pe papirus|Pe oase","Ce operă vine din Mesopotamia?|Epopeea lui Ghilgameș|Mahabharata|Cartea morților|Cartea cântecelor","Ce operă vine din Egipt?|Cartea morților|Ramayana|Epopeea lui Ghilgameș|Note istorice","De unde vine cuvântul alfabet?|De la literele grecești alfa și beta|De la cuvântul latin alba|Din limba egipteană|De la numele unui rege"],
+tf:["Scrisul îl cunoșteau preoții și unii funcționari.|1|","Alfabetul fenician avea și vocale.|0|Avea doar consoane; vocalele le-au adăugat grecii.","Scrierea chineză se folosește și astăzi.|1|","Un sul de papirus putea avea până la 45 de metri.|1|","Hieroglifele au fost descifrate de un savant german.|0|Au fost descifrate de francezul Jean-François Champollion.","Primele documente scrise din India sunt inscripțiile lui Așoka.|1|","Scrierea demotică era scrierea populară din Egipt.|1|","Hârtia a fost inventată în Egipt.|0|Hârtia a fost inventată în China.","Mahabharata și Ramayana sunt poeme din India.|1|","În China se scria cu o pensulă din păr de cămilă.|1|"],
+fill:["Scrierea cu semne în formă de cuie se numește ___.|cuneiformă","Hieroglifele au fost descifrate în anul ___.|1822","Alfabetul fenician avea ___ de litere.|22","Alfabetul latin avea ___ de litere.|23","Hârtia a fost inventată de Tsai ___.|Lun","Epopeea lui ___ este din Mesopotamia.|Ghilgameș","Hieroglifele au fost descifrate cu ajutorul Pietrei de la ___.|Rosetta"],
+chrono:["Apar scrierea cuneiformă și hieroglifele|sfârșitul mileniului al IV-lea î.H.","Apare scrierea pictografică chineză|2000–1700 î.H.","Alfabetul fenician|cca 1000 î.H.","Primele inscripții grecești|770–750 î.H.","Biblioteca lui Assurbanipal la Ninive|cca 650 î.H.","Inscripțiile lui Așoka în India|sec. al III-lea î.H.","Alfabetul latin cu 23 de litere|sec. I î.H.","Tsai Lun inventează hârtia|anul 98","Champollion descifrează hieroglifele|1822"],
+oral:["De ce a apărut scrisul?|Ca să se noteze recoltele, mărfurile, numărul locuitorilor și datoriile față de templu sau de rege.|recolt,marfuri/marfa,datori/locuitor","Ce tipuri de scriere cunoști?|Pictograma, scrierea cuneiformă din Mesopotamia, hieroglifele din Egipt, scrierea chineză și alfabetul.|cuneiform,hierogl,alfabet/pictogram","Cum se făcea foaia de papirus?|Miezul plantei se tăia în fâșii subțiri, puse în două straturi, apoi se presau, se uscau la soare și se băteau cu ciocanul.|fasii,strat,soare/usca/presa","Cum a apărut alfabetul nostru?|Din alfabetul fenician cu 22 de consoane, grecii au adăugat vocalele, apoi romanii au creat alfabetul latin, din care vin literele noastre.|fenician,grec/vocal,latin/roman","Cine a descifrat hieroglifele și cum?|Savantul francez Jean-François Champollion, în 1822, cu ajutorul Pietrei de la Rosetta.|champollion,rosetta,1822"],
+tutor:"apariția scrisului, pictograma, scrierea cuneiformă, hieroglifele, alfabetul fenician, grec și latin, materialele de scris, papirusul, hârtia și literatura antică"}
+];
+
+/* ===== state ===== */
+const KEY="istoria5_orient_v1";
+let S={name:"",prog:{},mist:{},streak:0,last:"",rate:1,voice:"auto",autoVoice:true,apiKey:"",proxy:""};
+try{const s=localStorage.getItem(KEY);if(s)S=Object.assign(S,JSON.parse(s));}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
+function touchDay(){const d=new Date().toISOString().slice(0,10);if(S.last===d)return;const y=new Date(Date.now()-864e5).toISOString().slice(0,10);S.streak=(S.last===y)?S.streak+1:1;S.last=d;save();}
+
+/* ===== helpers ===== */
+const $=s=>document.querySelector(s);
+const esc=t=>String(t).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const shuf=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+const T=id=>TOPICS.find(t=>t.id===id);
+function fold(t){return String(t).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[șş]/g,"s").replace(/[țţ]/g,"t").replace(/[.,!?;:"'„”“«»()\-–—]/g," ").replace(/\s+/g," ").trim();}
+function lev(a,b){const m=a.length,n=b.length;if(!m)return n;if(!n)return m;let p=[...Array(n+1).keys()];for(let i=1;i<=m;i++){let c=[i];for(let j=1;j<=n;j++)c[j]=Math.min(p[j]+1,c[j-1]+1,p[j-1]+(a[i-1]===b[j-1]?0:1));p=c;}return p[n];}
+function sim(a,b){a=fold(a);b=fold(b);const L=Math.max(a.length,b.length)||1;return 1-lev(a,b)/L;}
+const ROM={I:1,II:2,III:3,IV:4,V:5,VI:6,VII:7,VIII:8,IX:9,X:10,XI:11,XII:12,XV:15,XVI:16,XIX:19,XXI:21};
+const ORD={2:"doilea",3:"treilea",4:"patrulea",5:"cincilea",6:"șaselea",7:"șaptelea",8:"optulea",9:"nouălea",10:"zecelea",11:"unsprezecelea",12:"doisprezecelea",15:"cincisprezecelea",16:"șaisprezecelea",19:"nouăsprezecelea",21:"douăzeci și unulea"};
+function speakable(t){return String(t)
+ .replace(/„|”|“|"/g,"")
+ .replace(/\bal ([IVX]+)-lea\b/g,(m,r)=>ROM[r]&&ORD[ROM[r]]?"al "+ORD[ROM[r]]:m)
+ .replace(/mileniul I\b/g,"mileniul întâi").replace(/sec\. I î\.H\./g,"secolul întâi î.H.")
+ .replace(/sec\. ([IVX]+)[–-]([IVX]+)/g,(m,a,b)=>ROM[a]&&ROM[b]?"secolele "+ROM[a]+" și "+ROM[b]:m)
+ .replace(/\bsec\. /g,"secolul ")
+ .replace(/(\d{1,4})\s*[–-]\s*(\d{1,4})/g,"$1 până în $2")
+ .replace(/î\.H\./g,"înainte de Hristos").replace(/d\.H\./g,"după Hristos")
+ .replace(/\bcca /g,"circa ").replace(/___/g,"ceva");}
+
+/* ===== capabilities ===== */
+const CAP={tts:null,dict:null,sample:null};
+(async()=>{if(!(window.claude&&claude.use))return;
+ try{CAP.tts=await claude.use("tts");}catch(e){}
+ try{CAP.dict=await claude.use("dictation");if(CAP.dict)setupDict();}catch(e){}
+ try{CAP.sample=await claude.use("sample");}catch(e){}
+ render();})();
+
+/* ===== voice output (Romanian) ===== */
+let VOICES=[];
+function loadVoices(){try{VOICES=speechSynthesis.getVoices()||[];}catch(e){VOICES=[];}}
+if("speechSynthesis" in window){loadVoices();speechSynthesis.onvoiceschanged=loadVoices;}
+function roVoice(){const vs=VOICES.filter(v=>v.lang&&v.lang.toLowerCase().replace("_","-").startsWith("ro"));return vs.find(v=>/google|natural|premium|enhanced/i.test(v.name))||vs[0]||null;}
+function useClaudeVoice(){return CAP.tts&&(S.voice==="claude"||(S.voice==="auto"));}
+let tok=0;
+function stopSpeak(){tok++;try{speechSynthesis.cancel();}catch(e){}try{CAP.tts&&CAP.tts.stop();}catch(e){}document.querySelectorAll(".speaking").forEach(e=>e.classList.remove("speaking"));}
+function sayOne(text,t){return new Promise(res=>{
+ if(t!==tok)return res();const txt=speakable(text);
+ if(useClaudeVoice()){CAP.tts.speak(txt,{language:"ro",rate:S.rate}).then(res,res);return;}
+ if("speechSynthesis" in window){const u=new SpeechSynthesisUtterance(txt);const v=roVoice();if(v)u.voice=v;u.lang="ro-RO";u.rate=S.rate;
+  let done=false;const fin=()=>{if(!done){done=true;clearTimeout(tm);res();}};u.onend=fin;u.onerror=fin;
+  const tm=setTimeout(fin,Math.max(6000,txt.length*110/S.rate));speechSynthesis.speak(u);return;}
+ res();});}
+async function say(parts){stopSpeak();const t=tok;if(typeof parts==="string")parts=[{t:parts}];
+ for(const p of parts){if(t!==tok)return;if(p.el)p.el.classList.add("speaking");await sayOne(p.t,t);if(p.el)p.el.classList.remove("speaking");}}
+function canSpeak(){return !!CAP.tts||("speechSynthesis" in window);}
+
+/* ===== voice input (Romanian) ===== */
+const NativeSR=window.SpeechRecognition||window.webkitSpeechRecognition;
+let nativeBroken=(function(){try{return window.self!==window.top;}catch(e){return true;}})(),listenCb=null,dictBuf="",dictLang=true,listening=false;
+function setupDict(){const d=CAP.dict;
+ d.onPartial&&d.onPartial(({text})=>{if(listenCb)listenCb.partial((dictBuf+" "+text).trim());});
+ d.onFinal&&d.onFinal(({text})=>{dictBuf+=" "+text;if(listenCb)listenCb.partial(dictBuf.trim());});
+ d.onState&&d.onState(({state,reason})=>{if(state==="idle"){if(reason==="unavailable"&&dictLang)dictLang=false;if(listenCb){const cb=listenCb;listenCb=null;listening=false;cb.done(dictBuf.trim());}}});}
+function canListen(){return !!CAP.dict||(NativeSR&&!nativeBroken);}
+// must be called straight from a click
+function listen(onPartial,maxMs){return new Promise(resolve=>{
+ stopSpeak();listening=true;
+ if(CAP.dict){dictBuf="";listenCb={partial:onPartial,done:resolve};
+  CAP.dict.start(dictLang?{language:"ro"}:undefined).catch(e=>{listenCb=null;listening=false;if(e&&e.code==="not_granted")CAP.dict=null;if(e&&e.code==="unavailable")dictLang=false;resolve(null);});
+  setTimeout(()=>{try{listening&&CAP.dict&&CAP.dict.stop();}catch(e){}},maxMs||25000);return;}
+ if(NativeSR&&!nativeBroken){const r=new NativeSR();r.lang="ro-RO";r.interimResults=true;r.continuous=true;let txt="",fin=false;
+  r.onresult=e=>{txt="";for(let i=0;i<e.results.length;i++)txt+=e.results[i][0].transcript+" ";txt=txt.trim();onPartial&&onPartial(txt);};
+  r.onerror=e=>{if(/not-allowed|service-not-allowed/.test(e.error))nativeBroken=true;if(!fin){fin=true;listening=false;resolve(txt||null);}};
+  r.onend=()=>{if(!fin){fin=true;listening=false;resolve(txt);}};
+  try{r.start();window._sr=r;setTimeout(()=>{try{r.stop();}catch(e){}},maxMs||25000);}catch(e){nativeBroken=true;listening=false;resolve(null);}return;}
+ listening=false;resolve(null);});}
+function stopListen(){try{CAP.dict&&CAP.dict.stop();}catch(e){}try{window._sr&&window._sr.stop();}catch(e){}}
+
+
+/* ===== AI: Claude (claude.ai), propria cheie API sau server proxy ===== */
+const MODEL="claude-haiku-5-5";
+function hasAI(){return !!CAP.sample||!!S.apiKey||!!S.proxy;}
+async function ai(input){
+ if(CAP.sample){const r=await CAP.sample(input,{cache:false,modelTier:"default"});return r.text||"";}
+ const messages=typeof input==="string"?[{role:"user",content:input}]:input;
+ const body=JSON.stringify({model:MODEL,max_tokens:700,messages});
+ let res;
+ if(S.proxy){res=await fetch(S.proxy,{method:"POST",headers:{"content-type":"application/json"},body});}
+ else if(S.apiKey){res=await fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"content-type":"application/json","x-api-key":S.apiKey,"anthropic-version":"2023-06-01","anthropic-dangerous-direct-browser-access":"true"},body});}
+ else throw {code:"no_ai"};
+ if(res.status===429)throw {code:"rate_limited"};
+ if(res.status===401||res.status===403)throw {code:"bad_key"};
+ if(!res.ok)throw {code:"http_"+res.status};
+ const j=await res.json();return (j.content||[]).filter(b=>b.type==="text").map(b=>b.text).join("\n");}
+
+/* ===== routing ===== */
+let VIEW={v:"home"};
+function go(v){stopSpeak();stopListen();VIEW=v;render();window.scrollTo(0,0);}
+const ACTS=[
+ {id:"explain",g:1,ic:"📖",t:"Ascultă lecția",d:"Explicația pe scurt, citită cu voce"},
+ {id:"cards",g:1,ic:"🃏",t:"Cuvinte-cheie",d:"Carduri: întoarce și verifică-te"},
+ {id:"quiz",g:2,ic:"✅",t:"Test grilă",d:"Alege răspunsul corect",ex:1},
+ {id:"tf",g:2,ic:"⚖️",t:"Adevărat sau fals",d:"Prinde greșeala",ex:1},
+ {id:"match",g:2,ic:"🔗",t:"Ce înseamnă?",d:"Potrivește termenul cu explicația",ex:1},
+ {id:"fill",g:3,ic:"✍️",t:"Completează",d:"Scrie cuvântul lipsă",ex:1},
+ {id:"chrono",g:3,ic:"📅",t:"Pune în ordine",d:"Ce s-a întâmplat mai întâi?",ex:1,need:t=>t.chrono.length>=4},
+ {id:"oral",g:4,ic:"🎤",t:"Răspunde cu voce",d:"Ca la tablă: spui, aplicația verifică",ex:1},
+ {id:"tutor",g:4,ic:"🧑‍🏫",t:"Discută cu profesorul",d:"Te ascultă, te întreabă și te ajută",need:()=>hasAI()}
+];
+const GROUPS={1:"Învăț",2:"Exersez",3:"Scriu și ordonez",4:"Vorbesc"};
+function starsOf(tid,aid){return (S.prog[tid]||{})[aid]||0;}
+function topicPct(t){const acts=ACTS.filter(a=>a.ex&&(!a.need||a.need(t)));const s=acts.reduce((x,a)=>x+starsOf(t.id,a.id),0);return Math.round(100*s/(acts.length*3));}
+function starStr(n){return "★".repeat(n)+"☆".repeat(3-n);}
+
+/* ===== render ===== */
+function render(){const app=$("#app");const V=VIEW;
+ if(!S.name&&V.v==="home"){app.innerHTML=nameScreen();bindName();return;}
+ if(V.v==="home")app.innerHTML=home();
+ else if(V.v==="topic")app.innerHTML=topicScreen(T(V.t));
+ else if(V.v==="explain")app.innerHTML=explainScreen(T(V.t));
+ else if(V.v==="cards")app.innerHTML=cardsScreen(T(V.t));
+ else if(V.v==="ex")app.innerHTML=exScreen();
+ else if(V.v==="tutor"||V.v==="ask")app.innerHTML=chatScreen();
+ else if(V.v==="settings")app.innerHTML=settingsScreen();
+ bindCommon();
+ if(V.v==="ex")bindEx();
+ if(V.v==="tutor"||V.v==="ask")bindChat();}
+function topBar(title,back){return `<div class="top">${back?`<button class="back" aria-label="Înapoi" data-go='${back}'>‹</button>`:""}<div class="ttl">${title}</div><button class="ic" data-act="stop" aria-label="Oprește vocea" title="Oprește vocea">🔇</button></div>`;}
+
+function nameScreen(){return `<div class="hero"><div class="frieze"></div></div><div class="welcome"><div class="big">🏺</div><h1>Istoria, clasa a V-a</h1><p class="muted">Orientul Antic, după manualul <b>Istoria românilor și universală</b>. Înveți ascultând, răspunzând și vorbind.</p>
+<label for="nm">Cum te numești?</label><input id="nm" placeholder="Prenumele tău" autocomplete="off"><button class="btn primary wide" id="nmok">Începem</button></div>`;}
+function bindName(){const go2=()=>{const v=$("#nm").value.trim();if(!v)return;S.name=v;save();say("Bună, "+v+"! Hai să învățăm istoria împreună.");render();};$("#nmok").onclick=go2;$("#nm").addEventListener("keydown",e=>{if(e.key==="Enter")go2();});}
+
+function home(){touchDay();const mcount=Object.keys(S.mist).length;
+ return `<div class="hero"><div class="frieze"></div><div class="in"><div><h1>Salut, ${esc(S.name)}!</h1><div class="sub">Orientul Antic: 6 teme, pas cu pas.</div><div class="streak">🔥 ${S.streak} ${S.streak===1?"zi":"zile"} la rând</div></div><button class="ic" aria-label="Setări" data-go='{"v":"settings"}'>⚙️</button></div></div>
+ <div class="pad"><div class="path">${TOPICS.map(t=>{const p=topicPct(t);return `<button class="lcard" style="--c:${t.color}" data-go='{"v":"topic","t":"${t.id}"}'><div class="lnr">${t.nr}</div><div class="lt">${esc(t.title)}</div><div class="bar"><i style="width:${p}%"></i></div><div class="pct">${p}%</div></button>`;}).join("")}</div>
+ <div class="row3">
+  <button class="tile" data-act="general"><div class="ti">🏆</div><b>Test general</b><small>Întrebări din toate temele</small></button>
+  <button class="tile" ${mcount?"":"disabled"} data-act="review"><div class="ti">🔁</div><b>Greșelile mele</b><small>${mcount?mcount+" de repetat":"Încă nimic"}</small></button>
+  ${hasAI()?`<button class="tile" data-go='{"v":"ask"}'><div class="ti">🙋</div><b>Întreabă</b><small>Orice despre teme</small></button>`:`<button class="tile" data-go='{"v":"settings"}'><div class="ti">🔊</div><b>Voce</b><small>Setează vocea</small></button>`}
+ </div>
+ <p class="hint">Cum înveți repede: la fiecare temă mergi în ordine — <b>Învăț → Exersez → Scriu → Vorbesc</b>. Ținta: ★★★ la fiecare exercițiu. Greșelile se strâng la „Greșelile mele”.</p></div>`;}
+
+function topicScreen(t){const acts=ACTS.filter(a=>!a.need||a.need(t));
+ return topBar(t.nr,'{"v":"home"}')+`<div class="lhead" style="--c:${t.color}"><div class="n">${t.nr}</div><h2>${esc(t.title)}</h2></div><div class="pad">`+
+ [1,2,3,4].map(g=>{const list=acts.filter(a=>a.g===g);if(!list.length)return "";return `<h3 class="gh">${g}. ${GROUPS[g]}</h3><div class="acts">${list.map(a=>{
+  const gv=a.ex?`{"v":"ex","t":"${t.id}","a":"${a.id}"}`:`{"v":"${a.id}","t":"${t.id}"}`;
+  return `<button class="act" data-go='${gv}'><span class="aic">${a.ic}</span><span class="atx"><b>${a.t}</b><small>${a.d}</small></span>${a.ex?`<span class="st" aria-label="${starsOf(t.id,a.id)} stele">${starStr(starsOf(t.id,a.id))}</span>`:""}</button>`;}).join("")}</div>`;}).join("")+
+ `</div>`;}
+
+function explainScreen(t){return topBar("Ascultă lecția",`{"v":"topic","t":"${t.id}"}`)+`<div class="pad">
+ ${canSpeak()?`<button class="btn primary wide" data-act="readall">▶ Ascultă toată lecția</button><p class="hint">Sau apasă ▶ lângă un paragraf.</p>`:`<p class="note">Vocea nu e disponibilă pe acest dispozitiv. Vezi „Setări”.</p>`}
+ ${t.explain.map((p,i)=>`<div class="para"><button class="pl" aria-label="Ascultă paragraful" data-para="${i}">▶</button><p>${esc(p)}</p></div>`).join("")}
+ <button class="btn wide" data-go='{"v":"cards","t":"${t.id}"}'>Mai departe: Cuvinte-cheie</button></div>`;}
+
+function cardsScreen(t){return topBar("Cuvinte-cheie",`{"v":"topic","t":"${t.id}"}`)+`<div class="pad">
+ <p class="hint">Citește termenul, spune explicația în gând, apoi atinge cardul ca să verifici.</p>
+ <div class="cards">${t.cards.map((c,i)=>{const[a,b]=c.split("|");return `<button class="fc" style="--c:${t.color}" data-card="${i}"><div class="in"><div class="f"><b>${esc(a)}</b><small>Atinge ca să vezi explicația</small></div><div class="b">${esc(b)}</div></div></button>`;}).join("")}</div>
+ <button class="btn primary wide" data-go='{"v":"ex","t":"${t.id}","a":"quiz"}'>Mai departe: Test grilă</button></div>`;}
+
+/* ===== exercises ===== */
+let EX=null;
+function mkKey(tid,k,i){return tid+"|"+k+"|"+i;}
+function qFrom(key){const[tid,k,i]=key.split("|");const t=T(tid);if(!t)return null;const n=+i;
+ if(k==="quiz"){const[q,a,...w]=t.quiz[n].split("|");return{k:"choice",prompt:q,ans:a,opts:shuf([a,...w]),item:key,tc:t.color};}
+ if(k==="tf"){const[s,v,fix]=t.tf[n].split("|");return{k:"choice",two:1,sub:"Adevărat sau fals?",prompt:s,ans:v==="1"?"Adevărat":"Fals",opts:["Adevărat","Fals"],fix,item:key};}
+ if(k==="fill"){const[q,a]=t.fill[n].split("|");return{k:"type",sub:"Completează:",prompt:q,ans:a,item:key};}
+ if(k==="match"){const[a,b]=t.cards[n].split("|");const others=t.cards.filter((_,j)=>j!==n).map(c=>c.split("|")[0]);return{k:"choice",sub:"Ce termen are această explicație?",prompt:b,ans:a,opts:shuf([a,...shuf(others).slice(0,3)]),item:key};}
+ return null;}
+function genQs(t,a){const N=10;let qs=[];
+ if(a==="quiz")qs=shuf(t.quiz.map((_,i)=>i)).slice(0,N).map(i=>qFrom(mkKey(t.id,"quiz",i)));
+ if(a==="tf")qs=shuf(t.tf.map((_,i)=>i)).slice(0,N).map(i=>qFrom(mkKey(t.id,"tf",i)));
+ if(a==="fill")qs=shuf(t.fill.map((_,i)=>i)).map(i=>qFrom(mkKey(t.id,"fill",i)));
+ if(a==="match")qs=shuf(t.cards.map((_,i)=>i)).slice(0,8).map(i=>{if(Math.random()<.5)return qFrom(mkKey(t.id,"match",i));const[a1,b1]=t.cards[i].split("|");const others=t.cards.filter((_,j)=>j!==i).map(c=>c.split("|")[1]);return{k:"choice",sub:"Ce înseamnă?",prompt:a1,ans:b1,opts:shuf([b1,...shuf(others).slice(0,3)]),item:mkKey(t.id,"match",i)};});
+ if(a==="chrono"){const ev=t.chrono.map((c,i)=>{const[e,d]=c.split("|");return{e,d,i};});qs=[...Array(5)].map(()=>{const sel=shuf(ev).slice(0,4).sort((x,y)=>x.i-y.i);return{k:"order",sub:"Atinge evenimentele în ordinea în care s-au petrecut:",items:sel,tiles:shuf(sel.map((_,j)=>j))};});}
+ if(a==="oral")qs=shuf(t.oral.map((_,i)=>i)).map(i=>{const[q,m,kw]=t.oral[i].split("|");return{k:"oral",prompt:q,model:m,kw:kw.split(","),tid:t.id};});
+ return qs.filter(Boolean);}
+function genSpecial(a){
+ if(a==="general"){const all=[];TOPICS.forEach(t=>t.quiz.forEach((_,i)=>all.push(mkKey(t.id,"quiz",i))));return shuf(all).slice(0,15).map(qFrom);}
+ if(a==="review")return shuf(Object.keys(S.mist)).slice(0,12).map(qFrom).filter(Boolean);
+ return [];}
+function startEx(){const V=VIEW;const qs=V.t?genQs(T(V.t),V.a):genSpecial(V.a);EX={t:V.t||null,a:V.a,qs,i:0,ok:0,state:"ask",fb:null,typed:"",picked:[],heard:"",key:JSON.stringify(V)};}
+function exTitle(){if(EX.a==="general")return{ic:"🏆",t:"Test general"};if(EX.a==="review")return{ic:"🔁",t:"Greșelile mele"};return ACTS.find(x=>x.id===EX.a);}
+
+function exScreen(){if(!EX||EX.key!==JSON.stringify(VIEW))startEx();
+ const back=EX.t?`{"v":"topic","t":"${EX.t}"}`:'{"v":"home"}';const act=exTitle();
+ if(!EX.qs.length)return topBar(act.t,back)+`<div class="pad"><p class="note">Nu sunt întrebări aici încă. Exersează temele și revino.</p></div>`;
+ if(EX.i>=EX.qs.length){const pct=EX.ok/EX.qs.length;const st=pct>=.9?3:pct>=.7?2:pct>=.5?1:0;
+  if(EX.t&&!EX.saved){S.prog[EX.t]=S.prog[EX.t]||{};S.prog[EX.t][EX.a]=Math.max(st,S.prog[EX.t][EX.a]||0);save();}
+  if(!EX.saved){EX.saved=1;if(S.autoVoice)setTimeout(()=>say(st===3?"Excelent! Ai luat trei stele!":st>=1?"Bravo! Mai încearcă o dată pentru trei stele.":"Nu-i nimic. Recitește lecția și mai încearcă o dată."),50);}
+  return topBar(act.t,back)+`<div class="pad center"><div class="res">${st===3?"🏆":st>=1?"🎉":"💪"}</div><h2>${EX.ok} din ${EX.qs.length}</h2><div class="bigst" aria-label="${st} stele">${starStr(st)}</div>
+  <button class="btn primary wide" data-act="again">Încă o dată</button><button class="btn wide" data-go='${back}'>Înapoi</button></div>`;}
+ const q=EX.qs[EX.i];
+ let body=`<div class="prog"><i style="width:${100*EX.i/EX.qs.length}%"></i></div><div class="qsub">${esc(q.sub||(q.k==="oral"?"Răspunde cu voce:":"Alege răspunsul corect:"))}</div>`;
+ if(q.prompt)body+=`<div class="qp">${canSpeak()?`<button class="play" aria-label="Citește întrebarea" data-act="sayq">🔊</button>`:""}${esc(q.prompt)}</div>`;
+ if(q.k==="choice")body+=`<div class="opts ${q.two?"two":""}">${q.opts.map(o=>{let c="";if(EX.state!=="ask"){if(o===q.ans)c="good";else if(o===EX.chosen)c="bad";}return `<button class="opt ${c}" data-opt="${esc(o)}" ${EX.state!=="ask"?"disabled":""}>${esc(o)}</button>`;}).join("")}</div>`;
+ if(q.k==="type")body+=`<input id="tin" class="tin" autocomplete="off" autocapitalize="off" spellcheck="false" value="${esc(EX.typed)}" ${EX.state!=="ask"?"disabled":""} placeholder="Scrie aici…">${EX.state==="ask"?`<button class="btn primary wide" data-act="check">Verifică</button>`:""}`;
+ if(q.k==="order"){const done=EX.state!=="ask";
+  body+=`<div class="slots">${EX.picked.map((ti,pos)=>{const it=q.items[ti];const c=done?(ti===pos?"good":"bad"):"";return `<button class="chip ${c}" data-unpick="${pos}" ${done?"disabled":""}><span class="num">${pos+1}</span><span>${esc(it.e)}${done?`<small>${esc(it.d)}</small>`:""}</span></button>`;}).join("")||`<span class="hint" style="padding:8px">Aici apare ordinea ta</span>`}</div>
+  ${done?"":`<div class="ord">${q.tiles.map(ti=>{const used=EX.picked.includes(ti);return `<button class="chip ${used?"used":""}" data-pick="${ti}" ${used||done?"disabled":""}><span>${esc(q.items[ti].e)}</span></button>`;}).join("")}</div>`}
+  ${!done?`<button class="btn primary wide" data-act="checko" ${EX.picked.length===q.items.length?"":"disabled"}>Verifică</button>`:""}`;}
+ if(q.k==="oral"){const done=EX.state!=="ask";
+  if(!done){body+=canListen()?`<button class="mic big ${listening?"on":""}" data-act="spk">${listening?"👂 Te ascult… atinge ca să termini":"🎤 Atinge și răspunde"}</button><div class="heard" id="heard">${esc(EX.heard||"")}</div>`:"";
+   body+=`<label for="otin">${canListen()?"Sau scrie răspunsul:":"Scrie răspunsul (microfonul nu e disponibil aici):"}</label><input id="otin" class="tin" autocomplete="off" value="${esc(EX.typed)}" placeholder="Răspunsul tău…"><button class="btn primary wide" data-act="checkoral">Verifică</button><button class="btn wide" data-act="showmodel">Nu știu — arată-mi răspunsul</button>`;}
+  if(EX.selfAsk&&!EX.fb)body+=`<div class="fb no"><b>Răspunsul corect:</b> ${esc(q.model)}</div><div class="row2"><button class="btn good" data-self="1">👍 Am știut</button><button class="btn" data-self="0">🔁 Încă nu</button></div>`;}
+ if(EX.busy)body+=`<div class="note" style="margin-top:12px">Profesorul verifică răspunsul…</div>`;
+ if(EX.fb)body+=`<div class="fb ${EX.fb.ok?"ok":"no"}">${EX.fb.html}</div><button class="btn primary wide" data-act="next">Mai departe</button>`;
+ return topBar(`${act.ic} ${act.t}`,back)+`<div class="pad">${body}</div>`;}
+
+const PRAISE=["Bravo!","Super!","Excelent!","Foarte bine!","Perfect!"];
+function grade(ok,html,speakTxt){const q=EX.qs[EX.i];EX.state="done";EX.busy=false;if(ok)EX.ok++;
+ if(q.item){if(ok){if(S.mist[q.item]){S.mist[q.item]--;if(S.mist[q.item]<=0)delete S.mist[q.item];}}else S.mist[q.item]=2;save();}
+ EX.fb={ok,html};render();
+ if(S.autoVoice)say(speakTxt||(ok?pick(PRAISE):"Nu chiar. Răspunsul corect este: "+(q.ans||q.model)));}
+function checkTyped(){const q=EX.qs[EX.i];const v=($("#tin").value||"").trim();EX.typed=v;if(!v)return;
+ const a=fold(q.ans),b=fold(v);
+ if(a===b)return grade(true,`✅ ${pick(PRAISE)} <b>${esc(q.ans)}</b>`);
+ if(sim(q.ans,v)>=.8)return grade(true,`✅ Aproape perfect! Se scrie: <b>${esc(q.ans)}</b>`,"Corect! Atenție la scriere: "+q.ans);
+ grade(false,`❌ Corect este: <b>${esc(q.ans)}</b><small>Tu ai scris: ${esc(v)}</small>`);}
+function kwScore(text,kw){const f=" "+fold(text)+" ";let hit=0;kw.forEach(k=>{const alts=k.split("/").map(x=>fold(x)).filter(Boolean);if(alts.some(a=>f.includes(a)))hit++;});return hit;}
+async function gradeOral(ans){const q=EX.qs[EX.i];EX.heard=ans;const said=`<small><b>Ai spus:</b> ${esc(ans)}</small>`;
+ if(hasAI()){EX.busy=true;render();
+  try{const t=T(q.tid);const prompt=`Ești profesor de istorie pentru clasa a V-a. Verifici răspunsul oral al unui elev, după lecția de mai jos.\nLECȚIA:\n${t.explain.join("\n")}\n\nÎNTREBAREA: ${q.prompt}\nRĂSPUNS MODEL: ${q.model}\nRĂSPUNSUL ELEVULUI (transcris din voce, pot fi mici greșeli de transcriere): ${ans}\n\nDecide dacă elevul a spus ideile principale (nu cere formulare exactă). Răspunde DOAR cu JSON: {"ok":true sau false,"feedback":"2 propoziții scurte în română, calde: ce a spus bine și ce lipsește"}`;
+   const j=parseJSON(await ai(prompt));
+   if(j&&typeof j.ok==="boolean"){return grade(j.ok,`${j.ok?"✅":"🔁"} ${esc(j.feedback||"")}${said}<small><b>Răspuns model:</b> ${esc(q.model)}</small>`,(j.feedback||"")+(j.ok?"":" Răspunsul corect: "+q.model));}
+  }catch(e){}EX.busy=false;}
+ const hit=kwScore(ans,q.kw);const need=Math.max(1,Math.ceil(q.kw.length*0.6));const ok=hit>=need;
+ grade(ok,`${ok?"✅ "+pick(PRAISE)+" Ai spus ideile principale.":"🔁 Îți lipsesc câteva idei."}${said}<small><b>Răspuns model:</b> ${esc(q.model)}</small>`,ok?pick(PRAISE)+" Ai spus ideile principale.":"Îți lipsesc câteva idei. Răspunsul corect: "+q.model);}
+
+/* ===== events ===== */
+function bindCommon(){
+ document.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{const v=JSON.parse(b.dataset.go);if(v.v==="ex")EX=null;if(v.v==="tutor"||v.v==="ask")CHAT.key=null;go(v);if(v.v==="ex")autoAudio();});
+ document.querySelectorAll("[data-act]").forEach(b=>b.addEventListener("click",()=>ACT[b.dataset.act]&&ACT[b.dataset.act](b)));
+ document.querySelectorAll("[data-para]").forEach(b=>b.onclick=()=>{const t=T(VIEW.t);say([{t:t.explain[+b.dataset.para],el:b.parentElement}]);});
+ document.querySelectorAll("[data-card]").forEach(b=>b.onclick=()=>{b.classList.toggle("flip");const t=T(VIEW.t);const[a,d]=t.cards[+b.dataset.card].split("|");if(b.classList.contains("flip"))say(a+". "+d);else stopSpeak();});
+ const rs=$("#rate");if(rs)rs.oninput=()=>{S.rate=+rs.value;save();$("#ratev").textContent=rs.value;};
+ document.querySelectorAll("[data-voice]").forEach(b=>b.onclick=()=>{S.voice=b.dataset.voice;save();render();});
+ const av=$("#autov");if(av)av.onchange=()=>{S.autoVoice=av.checked;save();};}
+const ACT={
+ stop:()=>{stopSpeak();stopListen();},
+ readall:()=>{const t=T(VIEW.t);const els=[...document.querySelectorAll(".para")];say(t.explain.map((p,i)=>({t:p,el:els[i]})));},
+ general:()=>{EX=null;go({v:"ex",a:"general"});autoAudio();},
+ review:()=>{EX=null;go({v:"ex",a:"review"});autoAudio();},
+ again:()=>{EX=null;render();autoAudio();},
+ sayq:()=>{const q=EX.qs[EX.i];say(q.k==="choice"&&!q.two?q.prompt+". Variante: "+q.opts.join("; "):q.prompt);},
+ check:checkTyped,
+ checko:()=>{const q=EX.qs[EX.i];const ok=EX.picked.every((ti,pos)=>ti===pos);grade(ok,ok?`✅ ${pick(PRAISE)} Ordinea este corectă.`:`❌ Ordinea corectă:<br>${q.items.map((it,j)=>`${j+1}. ${esc(it.e)} — <b>${esc(it.d)}</b>`).join("<br>")}`,ok?pick(PRAISE):"Nu chiar. Uită-te la ordinea corectă.");},
+ next:()=>{EX.i++;EX.state="ask";EX.fb=null;EX.typed="";EX.picked=[];EX.chosen=null;EX.heard="";EX.selfAsk=false;render();autoAudio();},
+ spk:()=>{if(listening){stopListen();return;}
+  listen(t=>{EX.heard=t;const h=$("#heard");if(h)h.textContent=t;},40000).then(t=>{render();if(!t){const h=$("#heard");if(h)h.textContent="Nu te-am auzit. Mai încearcă sau scrie răspunsul.";return;}gradeOral(t);});render();},
+ checkoral:()=>{const v=($("#otin").value||"").trim();EX.typed=v;if(!v)return;gradeOral(v);},
+ showmodel:()=>{EX.selfAsk=true;render();say("Răspunsul corect: "+EX.qs[EX.i].model);},
+ settest:()=>say("Bună! Eu sunt vocea care îți citește lecțiile de istorie."),
+ reset:(b)=>{if(b.dataset.sure){S.prog={};S.mist={};save();go({v:"home"});}else{b.dataset.sure=1;b.textContent="Atinge încă o dată ca să confirmi";}},
+ rename:()=>{S.name="";save();go({v:"home"});},
+ send:()=>chatSend(),
+ mic:()=>chatMic(),
+ restart:()=>{CHAT={key:null,msgs:[],busy:false};render();},
+ aisave:async()=>{const k=($("#akey").value||"").trim(),p=($("#aproxy").value||"").trim();if(k)S.apiKey=k;S.proxy=p;save();const m=$("#aimsg");if(m)m.textContent="Verific…";
+  try{const t=await ai("Răspunde doar cu cuvântul: gata");render();const m2=$("#aimsg");if(m2)m2.textContent="✅ Funcționează: "+t.slice(0,40);}
+  catch(e){const m2=$("#aimsg");if(m2)m2.textContent=e&&e.code==="bad_key"?"❌ Cheia nu este corectă.":e&&e.code==="no_ai"?"Introdu o cheie sau o adresă.":"❌ Nu merge acum ("+(e&&e.code||"eroare")+").";}},
+ aiclear:()=>{S.apiKey="";S.proxy="";save();render();}
+};
+function autoAudio(){if(!S.autoVoice||!EX)return;const q=EX.qs[EX.i];if(!q)return;if(q.k==="oral"||q.k==="type"||q.two)say(q.prompt);}
+function bindEx(){
+ document.querySelectorAll("[data-opt]").forEach(b=>b.onclick=()=>{const q=EX.qs[EX.i];EX.chosen=b.dataset.opt;const ok=EX.chosen===q.ans;
+  grade(ok,ok?`✅ ${pick(PRAISE)}`:`❌ Corect: <b>${esc(q.ans)}</b>${q.fix?`<small>${esc(q.fix)}</small>`:""}`,ok?pick(PRAISE):(q.fix?"Nu chiar. "+q.fix:"Nu chiar. Corect este: "+q.ans));});
+ document.querySelectorAll("[data-pick]").forEach(b=>b.onclick=()=>{EX.picked.push(+b.dataset.pick);render();});
+ document.querySelectorAll("[data-unpick]").forEach(b=>b.onclick=()=>{EX.picked.splice(+b.dataset.unpick,1);render();});
+ document.querySelectorAll("[data-self]").forEach(b=>b.onclick=()=>{const ok=b.dataset.self==="1";EX.selfAsk=false;grade(ok,ok?"✅ Bravo! Continuă tot așa.":"🔁 Recitește lecția și data viitoare va ieși.");});
+ const t=$("#tin");if(t){t.addEventListener("keydown",e=>{if(e.key==="Enter")checkTyped();});t.addEventListener("input",()=>EX.typed=t.value);if(EX.state==="ask")setTimeout(()=>t.focus(),50);}
+ const o=$("#otin");if(o){o.addEventListener("input",()=>EX.typed=o.value);o.addEventListener("keydown",e=>{if(e.key==="Enter")ACT.checkoral();});}}
+
+/* ===== AI: tutor & ask ===== */
+let CHAT={key:null,msgs:[],busy:false};
+function parseJSON(t){try{return JSON.parse(t);}catch(e){}const a=t.indexOf("{"),b=t.lastIndexOf("}");if(a>=0&&b>a){try{return JSON.parse(t.slice(a,b+1));}catch(e){}}return null;}
+function tutorSystem(t){return `Ești „domnul profesor Andrei”, un profesor de istorie prietenos și răbdător. Vorbești cu ${S.name}, un elev de clasa a V-a din Republica Moldova, care învață după manualul „Istoria românilor și universală”. Tema de azi: ${t.nr} „${t.title}”. Subiecte: ${t.tutor}.
+LECȚIA (singura sursă de fapte pe care o folosești):
+${t.explain.join("\n")}
+Cum lucrezi:
+- Vorbești DOAR în română, simplu, ca pentru un copil de 10–11 ani. Replicile tale sunt citite cu voce tare, deci: fără liste, fără markdown, fără emoji, maximum 3 propoziții scurte.
+- Pui O SINGURĂ întrebare odată despre lecție, de la ușor la mai greu, ca la o lecție orală.
+- După răspunsul elevului: spui scurt dacă e corect, îl lauzi sincer, corectezi blând ce a greșit (cu răspunsul corect din lecție), apoi pui întrebarea următoare.
+- Dacă elevul nu știe, îi dai un indiciu sau îi explici pe scurt, apoi întrebi din nou altfel.
+- Dacă elevul întreabă ceva, îi răspunzi pe scurt din lecție și revii la întrebări.
+- Răspunsurile elevului vin din dictare vocală, deci pot avea mici greșeli de transcriere: nu le corecta ortografia.
+- Nu inventa fapte care nu sunt în lecție.`;}
+function askSystem(){return `Ești un profesor de istorie răbdător care explică în română unui elev de clasa a V-a (${S.name}) temele despre Orientul Antic din manualul „Istoria românilor și universală”. Răspunzi scurt (maximum 5 propoziții), simplu, cu un exemplu dacă ajută. Răspunsul tău va fi citit cu voce, deci fără liste, fără markdown, fără emoji. Folosește doar faptele din lecțiile de mai jos; dacă întrebarea nu e despre ele, spune blând că aplicația e pentru aceste teme.
+LECȚIILE:
+${TOPICS.map(t=>t.nr+". "+t.title+"\n"+t.explain.join("\n")).join("\n\n")}`;}
+function chatScreen(){const isAsk=VIEW.v==="ask";const t=isAsk?null:T(VIEW.t);const key=isAsk?"ask":"t"+t.id;
+ if(CHAT.key!==key){CHAT={key,msgs:[],busy:false};if(!isAsk&&hasAI())setTimeout(()=>callAI(),60);}
+ const back=isAsk?'{"v":"home"}':`{"v":"topic","t":"${t.id}"}`;
+ if(!hasAI())return topBar(isAsk?"🙋 Întreabă profesorul":"🧑‍🏫 Discută cu profesorul",back)+`<div class="pad"><p class="note">Profesorul AI nu este pornit încă. Un părinte îl poate porni din „Setări” → „Profesorul AI”. Până atunci, exersează cu „Răspunde cu voce”.</p></div>`;
+ const intro=isAsk?"Întreabă orice despre temele 1–6, de exemplu: „Ce este un zigurat?” sau „De ce Egiptul depindea de Nil?”":`Profesorul te întreabă despre „${t.title}”. ${canListen()?"Atinge 🎤, spune răspunsul, apoi atinge din nou ca să-l trimiți.":"Scrie răspunsul și apasă ➤."}`;
+ return topBar(isAsk?"🙋 Întreabă profesorul":"🧑‍🏫 Discută cu profesorul",back)+`<div class="pad chat"><div class="note">${esc(intro)}</div>
+ <div id="msgs">${CHAT.msgs.map(msgHTML).join("")}${CHAT.busy?`<div class="msg ai"><i>Profesorul se gândește…</i></div>`:""}</div>
+ ${CHAT.msgs.length>2?`<button class="btn wide" data-act="restart">Începe din nou</button>`:""}</div>
+ <div class="composer"><div class="crow">${canListen()?`<button class="mic ${listening?"on":""}" aria-label="Vorbește" data-act="mic">${listening?"⏹":"🎤"}</button>`:""}<input id="cin" placeholder="${isAsk?"Întrebarea ta…":"Răspunsul tău…"}" autocomplete="off"><button class="btn primary" aria-label="Trimite" data-act="send" ${CHAT.busy?"disabled":""}>➤</button></div></div>`;}
+function msgHTML(m,i){if(m.role==="user")return `<div class="msg me">${esc(m.content)}</div>`;return `<div class="msg ai">${canSpeak()?`<button class="pl" aria-label="Ascultă" data-replay="${i}">▶</button>`:""}${esc(m.content)}</div>`;}
+function bindChat(){const i=$("#cin");if(i)i.addEventListener("keydown",e=>{if(e.key==="Enter")chatSend();});
+ document.querySelectorAll("[data-replay]").forEach(b=>b.onclick=()=>say(CHAT.msgs[+b.dataset.replay].content));
+ const m=$("#msgs");if(m&&m.lastElementChild)m.lastElementChild.scrollIntoView({block:"end"});}
+async function callAI(){if(!hasAI()||CHAT.busy)return;CHAT.busy=true;render();
+ const isAsk=CHAT.key==="ask";const sys=isAsk?askSystem():tutorSystem(T(CHAT.key.slice(1)));
+ const hist=CHAT.msgs.map(m=>({role:m.role,content:m.content}));
+ const start={role:"user",content:sys+"\n\n(Începe acum: salută-l pe elev pe nume și pune prima întrebare.)"};
+ let input;
+ if(!hist.length)input=[start];
+ else if(hist[0].role==="assistant")input=[start,...hist];
+ else input=[{role:"user",content:sys+"\n\nPrimul mesaj al elevului: "+hist[0].content},...hist.slice(1)];
+ try{const txt=(await ai(input)).trim();
+  CHAT.msgs.push({role:"assistant",content:txt});CHAT.busy=false;render();if(S.autoVoice)say(txt);}
+ catch(e){CHAT.busy=false;CHAT.msgs.push({role:"assistant",content:e&&e.code==="rate_limited"?"Prea multe mesaje deodată. Așteaptă puțin și încearcă din nou.":e&&e.code==="not_granted"?"Profesorul nu are permisiunea să pornească. Verifică permisiunile aplicației.":e&&e.code==="bad_key"?"Cheia profesorului AI nu este corectă. Roagă un părinte să o verifice în Setări.":"Nu am putut răspunde acum. Încearcă din nou."});render();}}
+function chatSend(){const i=$("#cin");if(!i||CHAT.busy)return;const v=i.value.trim();if(!v)return;stopSpeak();CHAT.msgs.push({role:"user",content:v});callAI();}
+function chatMic(){if(listening){stopListen();return;}
+ listen(t=>{const i=$("#cin");if(i)i.value=t;},40000).then(t=>{render();if(t){const i=$("#cin");if(i){i.value=t;chatSend();}}});render();}
+
+function settingsScreen(){const rv=roVoice();
+ return topBar("Setări",'{"v":"home"}')+`<div class="pad">
+ <h3 class="gh">Vocea</h3>
+ ${CAP.tts?`<div class="seg"><button class="${S.voice!=="phone"?"on":""}" data-voice="auto">Vocea Claude</button><button class="${S.voice==="phone"?"on":""}" data-voice="phone">Vocea telefonului</button></div>`:""}
+ <div class="note">${CAP.tts&&S.voice!=="phone"?"Se folosește vocea Claude.":rv?"Voce română: <b>"+esc(rv.name)+"</b>":"Nu am găsit o voce în limba română pe acest dispozitiv.<br><small>Android: Setări → Accesibilitate → Text în vorbire → Google → instalează limba română. iPhone: Setări → Accesibilitate → Conținut vorbit → Voci → Română.</small>"}</div>
+ <button class="btn wide" data-act="settest">🔊 Ascultă un test</button>
+ <label for="rate">Viteza vocii: <b id="ratev">${S.rate}</b></label><input type="range" id="rate" min="0.7" max="1.3" step="0.05" value="${S.rate}">
+ <label class="chk"><input type="checkbox" id="autov" ${S.autoVoice?"checked":""}> Citește automat întrebările și răspunsurile</label>
+ <h3 class="gh">Microfonul</h3><div class="note">${canListen()?"✅ Poți răspunde cu vocea.":"Recunoașterea vocii nu e disponibilă aici. Răspunsurile orale se pot scrie. Pe telefon merge cel mai bine în Chrome (Android) sau în claude.ai."}</div>
+ <h3 class="gh">Profesorul AI (pentru părinți)</h3>
+ ${CAP.sample?`<div class="note">✅ Profesorul AI merge prin contul Claude.</div>`:`<div class="note">${S.apiKey||S.proxy?"✅ Profesorul AI este pornit"+(S.proxy?" prin server.":" cu cheia ta."):"Pentru discuția cu profesorul și verificarea răspunsurilor orale, introdu o cheie API Anthropic (de pe platform.claude.com) sau adresa serverului tău. Cheia rămâne doar pe acest telefon."}</div>
+ <label for="akey">Cheie API</label><input id="akey" class="tin" type="password" autocomplete="off" placeholder="${S.apiKey?"•••••• salvată":"sk-ant-…"}">
+ <label for="aproxy">sau adresa serverului (opțional)</label><input id="aproxy" class="tin" type="url" autocomplete="off" value="${esc(S.proxy||"")}" placeholder="https://….workers.dev">
+ <div class="row2"><button class="btn primary" data-act="aisave">Salvează și verifică</button><button class="btn danger" data-act="aiclear">Șterge</button></div><div class="heard" id="aimsg"></div>`}
+ <h3 class="gh">Profil</h3><button class="btn wide" data-act="rename">Schimbă numele (${esc(S.name)})</button><button class="btn wide danger" data-act="reset">Șterge tot progresul</button></div>`;}
+
+render();
+if("serviceWorker" in navigator&&location.protocol==="https:"){try{if(window.self===window.top)navigator.serviceWorker.register("sw.js").catch(()=>{});}catch(e){}}
+</script></body></html>
